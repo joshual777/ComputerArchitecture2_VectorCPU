@@ -19,7 +19,8 @@ module instructionMemory #(parameter PC_WIDTH = 32, parameter MEMORY_SIZE = 1024
 	
 	
 	initial begin
-		$readmemb("Agregar una vez este el COMPILADOR XD",memory);
+		$readmemb("C://Users//User//Desktop//X_SEMESTRE_2022//Arquitectura de Computadores 2//Proyecto_2//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Fetch//compiledInstructions.txt
+		",memory);
 	end
 	
 	
