@@ -41,9 +41,7 @@ module testAluV();
 		operand2[3] = 8'b110;
 		operand2[4] = 8'b1111;
 		operand2[5] = 8'b1000;
-		
-		vectorMask = 6'b111111;
-		
+				
 		expected_out[0] = 8'b10;
 		expected_out[1] = 8'b1001;
 		expected_out[2] = 8'b110;
@@ -75,7 +73,6 @@ module testAluV();
 		operand2[4] = 8'b1111;
 		operand2[5] = 8'b1000;
 		
-		vectorMask = 6'b111111;
 		
 		expected_out[0] = 8'b0;
 		expected_out[1] = 8'b1100;
@@ -107,8 +104,7 @@ module testAluV();
 		operand2[3] = 8'b110;
 		operand2[4] = 8'b1111;
 		operand2[5] = 8'b1000;
-		
-		vectorMask = 6'b0;
+	
 		
 		expected_out[0] = 8'b1;
 		expected_out[1] = 8'b1110;

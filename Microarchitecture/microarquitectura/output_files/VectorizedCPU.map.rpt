@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VectorizedCPU
-Thu Oct 20 23:21:58 2022
+Fri Oct 21 09:11:36 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,8 +10,22 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |Fetch
+ 12. Parameter Settings for User Entity Instance: adder:pcAdder
+ 13. Parameter Settings for User Entity Instance: mux2:pcmux
+ 14. Parameter Settings for User Entity Instance: flipflop:pcFlipFlop
+ 15. Parameter Settings for User Entity Instance: instructionMemory:instructionMemory
+ 16. Port Connectivity Checks: "adder:pcAdder"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,24 +51,24 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Oct 20 23:21:58 2022           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 21 09:11:35 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; VectorizedCPU                               ;
 ; Top-level Entity Name              ; Fetch                                       ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 275                                         ;
+;     Total combinational functions  ; 275                                         ;
+;     Dedicated logic registers      ; 10                                          ;
+; Total registers                    ; 10                                          ;
+; Total pins                         ; 66                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -154,11 +168,182 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Execute/mux2.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv                ;         ;
+; Fetch/instructionMemory.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv     ;         ;
+; Fetch/flipflop.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv              ;         ;
+; Fetch/Fetch.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv                 ;         ;
+; Fetch/adder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv                 ;         ;
+; fetch/compiledinstructions.txt   ; yes             ; Auto-Found File              ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/fetch/compiledinstructions.txt ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++--------------------------+----------------------------+
+; Resource                 ; Usage                      ;
++--------------------------+----------------------------+
+; I/O pins                 ; 66                         ;
+;                          ;                            ;
+; DSP block 9-bit elements ; 0                          ;
+;                          ;                            ;
+; Maximum fan-out node     ; flipflop:pcFlipFlop|out[1] ;
+; Maximum fan-out          ; 131                        ;
+; Total fan-out            ; 1218                       ;
+; Average fan-out          ; 2.92                       ;
++--------------------------+----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name       ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
+; |Fetch                                   ; 275 (0)             ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 66   ; 0            ; |Fetch                                     ; Fetch             ; work         ;
+;    |flipflop:pcFlipFlop|                 ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Fetch|flipflop:pcFlipFlop                 ; flipflop          ; work         ;
+;    |instructionMemory:instructionMemory| ; 264 (264)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Fetch|instructionMemory:instructionMemory ; instructionMemory ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; flipflop:pcFlipFlop|out[10..31]        ; Lost fanout        ;
+; Total Number of Removed Registers = 22 ;                    ;
++----------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 10    ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 10    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Fetch|flipflop:pcFlipFlop|out[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Fetch ;
++-------------------+-------+-------------------------------------------+
+; Parameter Name    ; Value ; Type                                      ;
++-------------------+-------+-------------------------------------------+
+; PC_WIDTH          ; 32    ; Signed Integer                            ;
+; INSTRUCTION_WIDTH ; 30    ; Signed Integer                            ;
++-------------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:pcAdder ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:pcmux ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: flipflop:pcFlipFlop ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instructionMemory:instructionMemory ;
++-------------------+-------+------------------------------------------------------+
+; Parameter Name    ; Value ; Type                                                 ;
++-------------------+-------+------------------------------------------------------+
+; PC_WIDTH          ; 32    ; Signed Integer                                       ;
+; MEMORY_SIZE       ; 1024  ; Signed Integer                                       ;
+; INSTRUCTION_WIDTH ; 30    ; Signed Integer                                       ;
++-------------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "adder:pcAdder"  ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[31..1] ; Input ; Info     ; Stuck at GND ;
+; b[0]     ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 66                          ;
+; cycloneiii_ff         ; 10                          ;
+;     ENA SCLR SLD      ; 10                          ;
+; cycloneiii_lcell_comb ; 275                         ;
+;     arith             ; 9                           ;
+;         2 data inputs ; 9                           ;
+;     normal            ; 266                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 252                         ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.36                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -167,7 +352,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 20 23:21:47 2022
+    Info: Processing started: Fri Oct 21 09:11:12 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VectorizedCPU -c VectorizedCPU
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testcpu.sv
@@ -210,10 +395,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file execute
     Info (12023): Found entity 1: mux3 File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux3.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file execute/execute.sv
     Info (12023): Found entity 1: Execute File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 23
-Error (10170): Verilog HDL syntax error at instructionMemory.sv(22) near text: ""C://Users//User//Desktop//X_SEMESTRE_2022//Arquitectura de Computadores 2//Proyecto_2//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Fetch//compiledInstructions.txt" end of line inside a string. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
-Error (10170): Verilog HDL syntax error at instructionMemory.sv(22) near text: "",memory);" end of line inside a string. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
-Error (10170): Verilog HDL syntax error at instructionMemory.sv(22) near text: "",memory);";  expecting ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
-Info (12021): Found 0 design units, including 0 entities, in source file fetch/instructionmemory.sv
+Info (12021): Found 1 design units, including 1 entities, in source file fetch/instructionmemory.sv
+    Info (12023): Found entity 1: instructionMemory File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/flipflop.sv
     Info (12023): Found entity 1: flipflop File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/fetch.sv
@@ -248,12 +431,55 @@ Info (12021): Found 1 design units, including 1 entities, in source file tests/t
     Info (12023): Found entity 1: testAluV File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testAluV.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testfecth.sv
     Info (12023): Found entity 1: testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(41): created implicit net for "scalarData2Final" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(48): created implicit net for "vectorData2Final" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 48
+Info (12127): Elaborating entity "Fetch" for the top level hierarchy
+Info (12128): Elaborating entity "adder" for hierarchy "adder:pcAdder" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 21
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pcmux" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 22
+Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:pcFlipFlop" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 23
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:instructionMemory" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 24
+Warning (10850): Verilog HDL warning at instructionMemory.sv(22): number of words (128) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
+Warning (10030): Net "memory.data_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (10030): Net "memory.waddr_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (10030): Net "memory.we_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/VectorizedCPU.ram0_instructionMemory_b821a16b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
-    Error: Peak virtual memory: 4778 megabytes
-    Error: Processing ended: Thu Oct 20 23:21:58 2022
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:23
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 22 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "NewPC[31]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[30]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[29]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[28]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[27]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[26]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[25]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[24]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[23]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[22]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[21]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[20]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[19]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[18]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[17]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[16]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[15]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[14]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[13]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[12]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[11]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+    Warning (15610): No output dependent on input pin "NewPC[10]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
+Info (21057): Implemented 341 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21061): Implemented 275 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Fri Oct 21 09:11:36 2022
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:40
 
 
 +------------------------------------------+

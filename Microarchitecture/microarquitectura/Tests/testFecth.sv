@@ -1,4 +1,6 @@
 module testFetch();
+	parameter PC_WIDTH;
+	parameter INSTRUCTION_WIDTH;
 	logic [PC_WIDTH-1:0] NewPC;
 	logic PCSelector, clock, reset, enable;
 	logic [INSTRUCTION_WIDTH-1:0] instruction;
@@ -16,7 +18,7 @@ module testFetch();
 	initial begin
 	
 		reset = 1; #1; reset = 0; #4; //Se resetea los registros
-		clk = 0; #5;
+		clock = 0; #5;
 	// Instrucción 1
 		NewPC = 32'b0; 
 		PCSelector = 1'b0;
