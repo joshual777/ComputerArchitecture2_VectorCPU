@@ -8,7 +8,6 @@
 	- enable
 	Outputs:
 	- instruction : next instruction
-	Just a comment
 */
 
 module Fetch #(parameter PC_WIDTH = 32, parameter INSTRUCTION_WIDTH = 30)
