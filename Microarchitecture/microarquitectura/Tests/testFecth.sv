@@ -1,12 +1,18 @@
-module testFetch();
-	parameter PC_WIDTH;
-	parameter INSTRUCTION_WIDTH;
+module testFecth();
+	parameter PC_WIDTH = 18;
+	parameter INSTRUCTION_WIDTH = 32;
+	//parameter MEMORY_SIZE = 1024;
 	logic [PC_WIDTH-1:0] NewPC;
+	logic [PC_WIDTH-1:0] PC;
 	logic PCSelector, clock, reset, enable;
 	logic [INSTRUCTION_WIDTH-1:0] instruction;
 	logic  [INSTRUCTION_WIDTH-1:0] OutExpected;
 	
-	Fetch fetch(NewPC,  PCSelector, clock, reset, enable,instruction);
+	//instructionMemory inst(PC,instruction);
+
+	
+	Fetch fetch(NewPC,  PCSelector, clock, reset, enable,
+													instruction);
 
 
 	
@@ -18,12 +24,14 @@ module testFetch();
 	initial begin
 	
 		reset = 1; #1; reset = 0; #4; //Se resetea los registros
-		clock = 0; #5;
+		clock = 0; 
+		PC = 18'b0; 
+		#5;
 	// Instrucción 1
-		NewPC = 32'b0; 
+		NewPC = 18'b10; 
 		PCSelector = 1'b0;
 		reset = 0;
-		enable = 0;
+		enable = 1;
 		OutExpected = 32'b011000000000000000000000000000; #10;
 
 

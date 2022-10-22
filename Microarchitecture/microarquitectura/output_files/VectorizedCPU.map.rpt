@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VectorizedCPU
-Fri Oct 21 09:11:36 2022
+Sat Oct 22 01:08:32 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 21 09:11:35 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 22 01:08:32 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; VectorizedCPU                               ;
 ; Top-level Entity Name              ; Fetch                                       ;
@@ -60,7 +60,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 275                                         ;
 ;     Dedicated logic registers      ; 10                                          ;
 ; Total registers                    ; 10                                          ;
-; Total pins                         ; 66                                          ;
+; Total pins                         ; 54                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -164,30 +164,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Execute/mux2.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv                ;         ;
-; Fetch/instructionMemory.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv     ;         ;
-; Fetch/flipflop.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv              ;         ;
-; Fetch/Fetch.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv                 ;         ;
-; Fetch/adder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv                 ;         ;
-; fetch/compiledinstructions.txt   ; yes             ; Auto-Found File              ; C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/fetch/compiledinstructions.txt ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; Execute/mux2.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv                ;         ;
+; Fetch/instructionMemory.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv     ;         ;
+; Fetch/flipflop.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv              ;         ;
+; Fetch/Fetch.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv                 ;         ;
+; Fetch/adder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv                 ;         ;
+; fetch/compiledinstructions.txt   ; yes             ; Auto-Found File              ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/fetch/compiledinstructions.txt ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -195,14 +195,14 @@ refer to the applicable agreement for further details.
 +--------------------------+----------------------------+
 ; Resource                 ; Usage                      ;
 +--------------------------+----------------------------+
-; I/O pins                 ; 66                         ;
+; I/O pins                 ; 54                         ;
 ;                          ;                            ;
 ; DSP block 9-bit elements ; 0                          ;
 ;                          ;                            ;
 ; Maximum fan-out node     ; flipflop:pcFlipFlop|out[1] ;
 ; Maximum fan-out          ; 131                        ;
-; Total fan-out            ; 1218                       ;
-; Average fan-out          ; 2.92                       ;
+; Total fan-out            ; 1206                       ;
+; Average fan-out          ; 3.07                       ;
 +--------------------------+----------------------------+
 
 
@@ -211,21 +211,21 @@ refer to the applicable agreement for further details.
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name       ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
-; |Fetch                                   ; 275 (0)             ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 66   ; 0            ; |Fetch                                     ; Fetch             ; work         ;
+; |Fetch                                   ; 275 (0)             ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 54   ; 0            ; |Fetch                                     ; Fetch             ; work         ;
 ;    |flipflop:pcFlipFlop|                 ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Fetch|flipflop:pcFlipFlop                 ; flipflop          ; work         ;
 ;    |instructionMemory:instructionMemory| ; 264 (264)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Fetch|instructionMemory:instructionMemory ; instructionMemory ; work         ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; flipflop:pcFlipFlop|out[10..31]        ; Lost fanout        ;
-; Total Number of Removed Registers = 22 ;                    ;
-+----------------------------------------+--------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; flipflop:pcFlipFlop|out[10..17]       ; Lost fanout        ;
+; Total Number of Removed Registers = 8 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -248,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Fetch|flipflop:pcFlipFlop|out[0] ;
+; 4:1                ; 18 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |Fetch|flipflop:pcFlipFlop|out[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
 
@@ -257,8 +257,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+-------+-------------------------------------------+
 ; Parameter Name    ; Value ; Type                                      ;
 +-------------------+-------+-------------------------------------------+
-; PC_WIDTH          ; 32    ; Signed Integer                            ;
-; INSTRUCTION_WIDTH ; 30    ; Signed Integer                            ;
+; PC_WIDTH          ; 18    ; Signed Integer                            ;
+; INSTRUCTION_WIDTH ; 32    ; Signed Integer                            ;
 +-------------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -268,7 +268,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------+
 ; Parameter Name ; Value ; Type                              ;
 +----------------+-------+-----------------------------------+
-; WIDTH          ; 32    ; Signed Integer                    ;
+; WIDTH          ; 18    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -278,7 +278,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------+
 ; Parameter Name ; Value ; Type                           ;
 +----------------+-------+--------------------------------+
-; WIDTH          ; 32    ; Signed Integer                 ;
+; WIDTH          ; 18    ; Signed Integer                 ;
 +----------------+-------+--------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -288,7 +288,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------+
 ; Parameter Name ; Value ; Type                                    ;
 +----------------+-------+-----------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                          ;
+; WIDTH          ; 18    ; Signed Integer                          ;
 +----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -298,9 +298,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+-------+------------------------------------------------------+
 ; Parameter Name    ; Value ; Type                                                 ;
 +-------------------+-------+------------------------------------------------------+
-; PC_WIDTH          ; 32    ; Signed Integer                                       ;
+; PC_WIDTH          ; 18    ; Signed Integer                                       ;
 ; MEMORY_SIZE       ; 1024  ; Signed Integer                                       ;
-; INSTRUCTION_WIDTH ; 30    ; Signed Integer                                       ;
+; INSTRUCTION_WIDTH ; 32    ; Signed Integer                                       ;
 +-------------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -310,7 +310,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+--------------+
 ; Port     ; Type  ; Severity ; Details      ;
 +----------+-------+----------+--------------+
-; b[31..1] ; Input ; Info     ; Stuck at GND ;
+; b[17..1] ; Input ; Info     ; Stuck at GND ;
 ; b[0]     ; Input ; Info     ; Stuck at VCC ;
 +----------+-------+----------+--------------+
 
@@ -320,20 +320,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 66                          ;
+; boundary_port         ; 54                          ;
 ; cycloneiii_ff         ; 10                          ;
 ;     ENA SCLR SLD      ; 10                          ;
-; cycloneiii_lcell_comb ; 275                         ;
+; cycloneiii_lcell_comb ; 276                         ;
 ;     arith             ; 9                           ;
 ;         2 data inputs ; 9                           ;
-;     normal            ; 266                         ;
+;     normal            ; 267                         ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 9                           ;
 ;         4 data inputs ; 252                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.36                        ;
+; Average LUT depth     ; 3.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -342,7 +343,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -352,139 +353,128 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Oct 21 09:11:12 2022
+    Info: Processing started: Sat Oct 22 01:08:18 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VectorizedCPU -c VectorizedCPU
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testcpu.sv
-    Info (12023): Found entity 1: testCPU File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCPU.sv Line: 2
+    Info (12023): Found entity 1: testCPU File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCPU.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/vectoraddersubstractor.sv
-    Info (12023): Found entity 1: vectorAdderSubstractor File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv Line: 1
+    Info (12023): Found entity 1: vectorAdderSubstractor File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memory/memory.sv
-    Info (12023): Found entity 1: memory File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv Line: 15
+    Info (12023): Found entity 1: memory File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file decode/vectorregfile.sv
-    Info (12023): Found entity 1: vectorRegFile File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/vectorRegFile.sv Line: 17
+    Info (12023): Found entity 1: vectorRegFile File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/vectorRegFile.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file decode/scalarregfile.sv
-    Info (12023): Found entity 1: scalarRegFile File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/scalarRegFile.sv Line: 15
+    Info (12023): Found entity 1: scalarRegFile File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/scalarRegFile.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file execute/mux2.sv
-    Info (12023): Found entity 1: mux2 File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv Line: 11
+    Info (12023): Found entity 1: mux2 File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/xor_modulo.sv
-    Info (12023): Found entity 1: xor_modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/xor_modulo.sv Line: 1
+    Info (12023): Found entity 1: xor_modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/xor_modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/shiftr_modulo.sv
-    Info (12023): Found entity 1: shiftR_modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/shiftR_modulo.sv Line: 1
+    Info (12023): Found entity 1: shiftR_modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/shiftR_modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/shiftl_modulo.sv
-    Info (12023): Found entity 1: shiftL_modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/shiftL_modulo.sv Line: 1
+    Info (12023): Found entity 1: shiftL_modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/shiftL_modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/or_modulo.sv
-    Info (12023): Found entity 1: or_modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/or_modulo.sv Line: 1
+    Info (12023): Found entity 1: or_modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/or_modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/multiplicador.sv
-    Info (12023): Found entity 1: multiplicador File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 1
+    Info (12023): Found entity 1: multiplicador File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/modulo.sv
-    Info (12023): Found entity 1: modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/modulo.sv Line: 1
+    Info (12023): Found entity 1: modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/fulladder.sv
-    Info (12023): Found entity 1: FullAdder File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv Line: 1
+    Info (12023): Found entity 1: FullAdder File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/divisor.sv
-    Info (12023): Found entity 1: divisor File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv Line: 2
+    Info (12023): Found entity 1: divisor File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/complement.sv
-    Info (12023): Found entity 1: Complement File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv Line: 1
+    Info (12023): Found entity 1: Complement File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/and_modulo.sv
-    Info (12023): Found entity 1: and_modulo File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/and_modulo.sv Line: 1
+    Info (12023): Found entity 1: and_modulo File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/and_modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/alu/adder_substractor.sv
-    Info (12023): Found entity 1: Adder_Substractor File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 1
+    Info (12023): Found entity 1: Adder_Substractor File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/mux3.sv
-    Info (12023): Found entity 1: mux3 File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux3.sv Line: 11
+    Info (12023): Found entity 1: mux3 File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux3.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file execute/execute.sv
-    Info (12023): Found entity 1: Execute File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 23
+    Info (12023): Found entity 1: Execute File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/instructionmemory.sv
-    Info (12023): Found entity 1: instructionMemory File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 12
+    Info (12023): Found entity 1: instructionMemory File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/flipflop.sv
-    Info (12023): Found entity 1: flipflop File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv Line: 11
+    Info (12023): Found entity 1: flipflop File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/fetch.sv
-    Info (12023): Found entity 1: Fetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 13
+    Info (12023): Found entity 1: Fetch File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file fetch/adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv Line: 9
+    Info (12023): Found entity 1: adder File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv Line: 9
 Warning (12019): Can't analyze file -- file Execute/VECTOR_ALU/vectorAdder.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/aluv.sv
-    Info (12023): Found entity 1: ALUV File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 1
+    Info (12023): Found entity 1: ALUV File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/vectormultiplier.sv
-    Info (12023): Found entity 1: vectorMultiplier File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorMultiplier.sv Line: 1
+    Info (12023): Found entity 1: vectorMultiplier File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorMultiplier.sv Line: 1
 Warning (12019): Can't analyze file -- file Execute/VECTOR_ALU/vectorDivider.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file decode/decode.sv
-    Info (12023): Found entity 1: Decode File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv Line: 27
+    Info (12023): Found entity 1: Decode File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv Line: 13
+    Info (12023): Found entity 1: CPU File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file control/condunit.sv
-    Info (12023): Found entity 1: condunit File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/condunit.sv Line: 1
+    Info (12023): Found entity 1: condunit File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/condunit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hazards/hazardsunit.sv
-    Info (12023): Found entity 1: hazardsUnit File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Hazards/hazardsUnit.sv Line: 10
+    Info (12023): Found entity 1: hazardsUnit File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Hazards/hazardsUnit.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/vectorfpmultiplier.sv
-    Info (12023): Found entity 1: vectorFPMultiplier File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv Line: 1
+    Info (12023): Found entity 1: vectorFPMultiplier File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control/controlunit.sv
-    Info (12023): Found entity 1: controlUnit File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/controlUnit.sv Line: 2
+    Info (12023): Found entity 1: controlUnit File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/controlUnit.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testcontrolunit.sv
-    Info (12023): Found entity 1: testControlUnit File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testControlUnit.sv Line: 1
+    Info (12023): Found entity 1: testControlUnit File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testControlUnit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testalu.sv
-    Info (12023): Found entity 1: testALU File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv Line: 1
+    Info (12023): Found entity 1: testALU File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testcondunit.sv
-    Info (12023): Found entity 1: testCondUnit File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCondUnit.sv Line: 1
+    Info (12023): Found entity 1: testCondUnit File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCondUnit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testaluv.sv
-    Info (12023): Found entity 1: testAluV File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testAluV.sv Line: 1
+    Info (12023): Found entity 1: testAluV File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testAluV.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testfecth.sv
-    Info (12023): Found entity 1: testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(41): created implicit net for "scalarData2Final" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 41
-Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(48): created implicit net for "vectorData2Final" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 48
+    Info (12023): Found entity 1: testFecth File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(41): created implicit net for "scalarData2Final" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(48): created implicit net for "vectorData2Final" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 48
 Info (12127): Elaborating entity "Fetch" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:pcAdder" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 21
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pcmux" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 22
-Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:pcFlipFlop" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 23
-Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:instructionMemory" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 24
-Warning (10850): Verilog HDL warning at instructionMemory.sv(22): number of words (128) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
-Warning (10030): Net "memory.data_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
-Warning (10030): Net "memory.waddr_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
-Warning (10030): Net "memory.we_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/VectorizedCPU.ram0_instructionMemory_b821a16b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (12128): Elaborating entity "adder" for hierarchy "adder:pcAdder" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pcmux" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 23
+Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:pcFlipFlop" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 24
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:instructionMemory" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 25
+Warning (10850): Verilog HDL warning at instructionMemory.sv(22): number of words (128) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 22
+Warning (10030): Net "memory.data_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (10030): Net "memory.waddr_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (10030): Net "memory.we_a" at instructionMemory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv Line: 18
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/VectorizedCPU.ram0_instructionMemory_929dabe3.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "instruction[30]" is stuck at GND File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 18
+    Warning (13410): Pin "instruction[31]" is stuck at GND File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 18
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 22 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "NewPC[31]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[30]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[29]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[28]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[27]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[26]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[25]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[24]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[23]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[22]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[21]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[20]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[19]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[18]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[17]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[16]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[15]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[14]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[13]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[12]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[11]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-    Warning (15610): No output dependent on input pin "NewPC[10]" File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 14
-Info (21057): Implemented 341 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 36 input pins
-    Info (21059): Implemented 30 output pins
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "NewPC[17]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[16]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[15]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[14]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[13]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[12]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[11]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+    Warning (15610): No output dependent on input pin "NewPC[10]" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv Line: 15
+Info (21057): Implemented 329 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 32 output pins
     Info (21061): Implemented 275 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Fri Oct 21 09:11:36 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4912 megabytes
+    Info: Processing ended: Sat Oct 22 01:08:32 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg.
+The suppressed messages can be found in C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg.
 
 

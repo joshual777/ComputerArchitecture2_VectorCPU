@@ -9,7 +9,7 @@
 	Outputs:
  	- instruction: fetched instruction
 **/
-module instructionMemory #(parameter PC_WIDTH = 32, parameter MEMORY_SIZE = 1024, parameter INSTRUCTION_WIDTH = 32)
+module instructionMemory #(parameter PC_WIDTH = 18, parameter MEMORY_SIZE = 1024, parameter INSTRUCTION_WIDTH = 32)
 								 (input logic [PC_WIDTH-1:0] PC,
 								  output logic [INSTRUCTION_WIDTH-1:0] instruction
 								  );
@@ -19,7 +19,7 @@ module instructionMemory #(parameter PC_WIDTH = 32, parameter MEMORY_SIZE = 1024
 	
 	
 	initial begin
-		$readmemb("C://Users//User//Desktop//X_SEMESTRE_2022//Arquitectura de Computadores 2//Proyecto_2//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Fetch//compiledInstructions.txt",memory);
+		$readmemb("C://Users//abiga//Desktop//ArquiII//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Fetch//compiledInstructions.txt",memory);
 	end
 	
 	

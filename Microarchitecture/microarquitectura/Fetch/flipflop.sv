@@ -8,7 +8,7 @@
 	Outputs:
  	- out: current saved value
 **/
-module flipflop #(parameter WIDTH = 8)
+module flipflop #(parameter WIDTH = 18)
 	(input logic clk, reset, enable,
 	input logic [WIDTH-1:0] in,
 	output logic [WIDTH-1:0] out);	
