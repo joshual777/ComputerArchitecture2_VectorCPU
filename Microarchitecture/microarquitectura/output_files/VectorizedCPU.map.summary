@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Sat Oct 22 01:08:32 2022
+Analysis & Synthesis Status : Successful - Sun Oct 23 20:41:53 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : VectorizedCPU
-Top-level Entity Name : Fetch
+Top-level Entity Name : ALU
 Family : Cyclone IV GX
-Total logic elements : 275
-    Total combinational functions : 275
-    Dedicated logic registers : 10
-Total registers : 10
-Total pins : 54
+Total logic elements : 578
+    Total combinational functions : 578
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 61
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Embedded Multiplier 9-bit elements : 2
 Total GXB Receiver Channel PCS : 0
 Total GXB Receiver Channel PMA : 0
 Total GXB Transmitter Channel PCS : 0

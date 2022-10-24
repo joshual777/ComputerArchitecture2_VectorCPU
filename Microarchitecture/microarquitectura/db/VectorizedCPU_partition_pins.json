@@ -4,179 +4,247 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "instruction[0]",
+					"name" : "Out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[1]",
+					"name" : "Out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[2]",
+					"name" : "Out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[3]",
+					"name" : "Out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[4]",
+					"name" : "Out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[5]",
+					"name" : "Out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[6]",
+					"name" : "Out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[7]",
+					"name" : "Out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[8]",
+					"name" : "Out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[9]",
+					"name" : "Out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[10]",
+					"name" : "Out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[11]",
+					"name" : "Out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[12]",
+					"name" : "Out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[13]",
+					"name" : "Out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[14]",
+					"name" : "Out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[15]",
+					"name" : "Out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[16]",
+					"name" : "Out[16]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[17]",
+					"name" : "Out[17]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[18]",
+					"name" : "N",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[19]",
+					"name" : "Z",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[20]",
+					"name" : "V",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[21]",
+					"name" : "C",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[22]",
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[23]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[24]",
+					"name" : "sel[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[25]",
+					"name" : "sel[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[26]",
+					"name" : "sel[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[27]",
+					"name" : "B[17]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[28]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[29]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[7]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PCSelector",
+					"name" : "B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "enable",
+					"name" : "B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[8]",
+					"name" : "B[8]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[9]",
+					"name" : "B[9]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[0]",
+					"name" : "B[10]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[1]",
+					"name" : "B[11]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[5]",
+					"name" : "B[12]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[3]",
+					"name" : "B[13]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[6]",
+					"name" : "B[14]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[2]",
+					"name" : "B[15]",
 					"strict" : false
 				},
 				{
-					"name" : "NewPC[4]",
+					"name" : "B[16]",
+					"strict" : false
+				},
+				{
+					"name" : "A[17]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A[14]",
+					"strict" : false
+				},
+				{
+					"name" : "A[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A[16]",
 					"strict" : false
 				}
 			]

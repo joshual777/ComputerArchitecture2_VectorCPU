@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at ALU.sv(23): always construct contains both blocking and non-blocking assignments File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 23
+Warning (10268): Verilog HDL information at ALU.sv(34): always construct contains both blocking and non-blocking assignments File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 34

@@ -1,5 +1,5 @@
 //AAAAAAAAAAAAAAAAAAAAAA
-module divisor #(parameter n = 8) (input signed [n-1:0] A, 
+module divisor #(parameter n = 18) (input signed [n-1:0] A, 
 													  input signed [n-1:0] B, 
 													  output reg [n-1:0] out,
  													  output bit overflow,

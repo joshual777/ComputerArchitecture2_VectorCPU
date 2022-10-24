@@ -1,843 +1,114 @@
-# Reading pref.tcl
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do VectorizedCPU_run_msim_rtl_verilog.do
-# if ![file isdirectory verilog_libs] {
-# 	file mkdir verilog_libs
-# }
-# 
-# vlib verilog_libs/altera_ver
-# vmap altera_ver ./verilog_libs/altera_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap altera_ver ./verilog_libs/altera_ver 
-# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_primitives.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:14:59 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_primitives.v 
-# -- Compiling module global
-# -- Compiling module carry
-# -- Compiling module cascade
-# -- Compiling module carry_sum
-# -- Compiling module exp
-# -- Compiling module soft
-# -- Compiling module opndrn
-# -- Compiling module row_global
-# -- Compiling module TRI
-# -- Compiling module lut_input
-# -- Compiling module lut_output
-# -- Compiling module latch
-# -- Compiling module dlatch
-# -- Compiling module prim_gdff
-# -- Compiling module dff
-# -- Compiling module dffe
-# -- Compiling module dffea
-# -- Compiling module dffeas
-# -- Compiling module dffeas_pr
-# -- Compiling module prim_gtff
-# -- Compiling module tff
-# -- Compiling module tffe
-# -- Compiling module prim_gjkff
-# -- Compiling module jkff
-# -- Compiling module jkffe
-# -- Compiling module prim_gsrff
-# -- Compiling module srff
-# -- Compiling module srffe
-# -- Compiling module clklock
-# -- Compiling module alt_inbuf
-# -- Compiling module alt_outbuf
-# -- Compiling module alt_outbuf_tri
-# -- Compiling module alt_iobuf
-# -- Compiling module alt_inbuf_diff
-# -- Compiling module alt_outbuf_diff
-# -- Compiling module alt_outbuf_tri_diff
-# -- Compiling module alt_iobuf_diff
-# -- Compiling module alt_bidir_diff
-# -- Compiling module alt_bidir_buf
-# -- Compiling UDP PRIM_GDFF_LOW
-# -- Compiling UDP PRIM_GDFF_LOW_SCLR_PRIORITY
-# -- Compiling UDP PRIM_GDFF_HIGH
-# -- Compiling UDP PRIM_GDFF_HIGH_SCLR_PRIORITY
-# 
-# Top level modules:
-# 	global
-# 	carry
-# 	cascade
-# 	carry_sum
-# 	exp
-# 	soft
-# 	opndrn
-# 	row_global
-# 	TRI
-# 	lut_input
-# 	lut_output
-# 	latch
-# 	dlatch
-# 	dff
-# 	dffe
-# 	dffea
-# 	dffeas
-# 	dffeas_pr
-# 	tff
-# 	tffe
-# 	jkff
-# 	jkffe
-# 	srff
-# 	srffe
-# 	clklock
-# 	alt_inbuf
-# 	alt_outbuf
-# 	alt_outbuf_tri
-# 	alt_iobuf
-# 	alt_inbuf_diff
-# 	alt_outbuf_diff
-# 	alt_outbuf_tri_diff
-# 	alt_iobuf_diff
-# 	alt_bidir_diff
-# 	alt_bidir_buf
-# End time: 09:15:06 on Oct 21,2022, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/lpm_ver
-# vmap lpm_ver ./verilog_libs/lpm_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap lpm_ver ./verilog_libs/lpm_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/220model.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:07 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/220model.v 
-# -- Compiling module LPM_MEMORY_INITIALIZATION
-# -- Compiling module LPM_HINT_EVALUATION
-# -- Compiling module LPM_DEVICE_FAMILIES
-# -- Compiling module lpm_constant
-# -- Compiling module lpm_inv
-# -- Compiling module lpm_and
-# -- Compiling module lpm_or
-# -- Compiling module lpm_xor
-# -- Compiling module lpm_bustri
-# -- Compiling module lpm_mux
-# -- Compiling module lpm_decode
-# -- Compiling module lpm_clshift
-# -- Compiling module lpm_add_sub
-# -- Compiling module lpm_compare
-# -- Compiling module lpm_mult
-# -- Compiling module lpm_divide
-# -- Compiling module lpm_abs
-# -- Compiling module lpm_counter
-# -- Compiling module lpm_latch
-# -- Compiling module lpm_ff
-# -- Compiling module lpm_shiftreg
-# -- Compiling module lpm_ram_dq
-# -- Compiling module lpm_ram_dp
-# -- Compiling module lpm_ram_io
-# -- Compiling module lpm_rom
-# -- Compiling module lpm_fifo
-# -- Compiling module lpm_fifo_dc_dffpipe
-# -- Compiling module lpm_fifo_dc_fefifo
-# -- Compiling module lpm_fifo_dc_async
-# -- Compiling module lpm_fifo_dc
-# -- Compiling module lpm_inpad
-# -- Compiling module lpm_outpad
-# -- Compiling module lpm_bipad
-# 
-# Top level modules:
-# 	lpm_constant
-# 	lpm_inv
-# 	lpm_and
-# 	lpm_or
-# 	lpm_xor
-# 	lpm_bustri
-# 	lpm_mux
-# 	lpm_decode
-# 	lpm_clshift
-# 	lpm_add_sub
-# 	lpm_compare
-# 	lpm_mult
-# 	lpm_divide
-# 	lpm_abs
-# 	lpm_counter
-# 	lpm_latch
-# 	lpm_ff
-# 	lpm_shiftreg
-# 	lpm_ram_dq
-# 	lpm_ram_dp
-# 	lpm_ram_io
-# 	lpm_rom
-# 	lpm_fifo
-# 	lpm_fifo_dc
-# 	lpm_inpad
-# 	lpm_outpad
-# 	lpm_bipad
-# End time: 09:15:08 on Oct 21,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/sgate_ver
-# vmap sgate_ver ./verilog_libs/sgate_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap sgate_ver ./verilog_libs/sgate_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:08 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v 
-# -- Compiling module oper_add
-# -- Compiling module oper_addsub
-# -- Compiling module mux21
-# -- Compiling module io_buf_tri
-# -- Compiling module io_buf_opdrn
-# -- Compiling module oper_mult
-# -- Compiling module tri_bus
-# -- Compiling module oper_div
-# -- Compiling module oper_mod
-# -- Compiling module oper_left_shift
-# -- Compiling module oper_right_shift
-# -- Compiling module oper_rotate_left
-# -- Compiling module oper_rotate_right
-# -- Compiling module oper_less_than
-# -- Compiling module oper_mux
-# -- Compiling module oper_selector
-# -- Compiling module oper_decoder
-# -- Compiling module oper_bus_mux
-# -- Compiling module oper_latch
-# 
-# Top level modules:
-# 	oper_add
-# 	oper_addsub
-# 	mux21
-# 	io_buf_tri
-# 	io_buf_opdrn
-# 	oper_mult
-# 	tri_bus
-# 	oper_div
-# 	oper_mod
-# 	oper_left_shift
-# 	oper_right_shift
-# 	oper_rotate_left
-# 	oper_rotate_right
-# 	oper_less_than
-# 	oper_mux
-# 	oper_selector
-# 	oper_decoder
-# 	oper_bus_mux
-# 	oper_latch
-# End time: 09:15:08 on Oct 21,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/altera_mf_ver
-# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_mf.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:09 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_mf.v 
-# -- Compiling module lcell
-# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
-# -- Compiling module ALTERA_MF_HINT_EVALUATION
-# -- Compiling module ALTERA_DEVICE_FAMILIES
-# -- Compiling module dffp
-# -- Compiling module pll_iobuf
-# -- Compiling module stx_m_cntr
-# -- Compiling module stx_n_cntr
-# -- Compiling module stx_scale_cntr
-# -- Compiling module MF_pll_reg
-# -- Compiling module MF_stratix_pll
-# -- Compiling module arm_m_cntr
-# -- Compiling module arm_n_cntr
-# -- Compiling module arm_scale_cntr
-# -- Compiling module MF_stratixii_pll
-# -- Compiling module ttn_m_cntr
-# -- Compiling module ttn_n_cntr
-# -- Compiling module ttn_scale_cntr
-# -- Compiling module MF_stratixiii_pll
-# -- Compiling module cda_m_cntr
-# -- Compiling module cda_n_cntr
-# -- Compiling module cda_scale_cntr
-# -- Compiling module MF_cycloneiii_pll
-# -- Compiling module MF_cycloneiiigl_m_cntr
-# -- Compiling module MF_cycloneiiigl_n_cntr
-# -- Compiling module MF_cycloneiiigl_scale_cntr
-# -- Compiling module cycloneiiigl_post_divider
-# -- Compiling module MF_cycloneiiigl_pll
-# -- Compiling module altpll
-# -- Compiling module altlvds_rx
-# -- Compiling module stratix_lvds_rx
-# -- Compiling module stratixgx_dpa_lvds_rx
-# -- Compiling module stratixii_lvds_rx
-# -- Compiling module flexible_lvds_rx
-# -- Compiling module stratixiii_lvds_rx
-# -- Compiling module stratixiii_lvds_rx_channel
-# -- Compiling module stratixiii_lvds_rx_dpa
-# -- Compiling module altlvds_tx
-# -- Compiling module stratixv_local_clk_divider
-# -- Compiling module stratix_tx_outclk
-# -- Compiling module stratixii_tx_outclk
-# -- Compiling module flexible_lvds_tx
-# -- Compiling module dcfifo_dffpipe
-# -- Compiling module dcfifo_fefifo
-# -- Compiling module dcfifo_async
-# -- Compiling module dcfifo_sync
-# -- Compiling module dcfifo_low_latency
-# -- Compiling module dcfifo_mixed_widths
-# -- Compiling module dcfifo
-# -- Compiling module altera_syncram_derived
-# -- Compiling module altera_syncram_derived_forwarding_logic
-# -- Compiling module altaccumulate
-# -- Compiling module altmult_accum
-# -- Compiling module altmult_add
-# -- Compiling module altfp_mult
-# -- Compiling module altsqrt
-# -- Compiling module altclklock
-# -- Compiling module altddio_in
-# -- Compiling module altddio_out
-# -- Compiling module altddio_bidir
-# -- Compiling module altdpram
-# -- Compiling module altsyncram
-# -- Compiling module altsyncram_body
-# -- Compiling module alt3pram
-# -- Compiling module parallel_add
-# -- Compiling module scfifo
-# -- Compiling module altshift_taps
-# -- Compiling module a_graycounter
-# -- Compiling module altsquare
-# -- Compiling module altera_std_synchronizer
-# -- Compiling module altera_std_synchronizer_bundle
-# -- Compiling module alt_cal
-# -- Compiling module alt_cal_mm
-# -- Compiling module alt_cal_c3gxb
-# -- Compiling module alt_cal_sv
-# -- Compiling module alt_cal_av
-# -- Compiling module alt_aeq_s4
-# -- Compiling module alt_eyemon
-# -- Compiling module alt_dfe
-# -- Compiling module signal_gen
-# -- Compiling module jtag_tap_controller
-# -- Compiling module dummy_hub
-# -- Compiling module sld_virtual_jtag
-# -- Compiling module sld_signaltap
-# -- Compiling module altstratixii_oct
-# -- Compiling module altparallel_flash_loader
-# -- Compiling module altserial_flash_loader
-# -- Compiling module alt_fault_injection
-# -- Compiling module sld_virtual_jtag_basic
-# -- Compiling module altsource_probe
-# 
-# Top level modules:
-# 	lcell
-# 	altpll
-# 	altlvds_rx
-# 	altlvds_tx
-# 	dcfifo
-# 	altaccumulate
-# 	altmult_accum
-# 	altmult_add
-# 	altfp_mult
-# 	altsqrt
-# 	altclklock
-# 	altddio_bidir
-# 	altdpram
-# 	alt3pram
-# 	parallel_add
-# 	scfifo
-# 	altshift_taps
-# 	a_graycounter
-# 	altsquare
-# 	altera_std_synchronizer_bundle
-# 	alt_cal
-# 	alt_cal_mm
-# 	alt_cal_c3gxb
-# 	alt_cal_sv
-# 	alt_cal_av
-# 	alt_aeq_s4
-# 	alt_eyemon
-# 	alt_dfe
-# 	sld_virtual_jtag
-# 	sld_signaltap
-# 	altstratixii_oct
-# 	altparallel_flash_loader
-# 	altserial_flash_loader
-# 	alt_fault_injection
-# 	sld_virtual_jtag_basic
-# 	altsource_probe
-# End time: 09:15:11 on Oct 21,2022, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/altera_lnsim_ver
-# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
-# Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_lnsim.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:11 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_lnsim.sv 
-# -- Compiling package altera_lnsim_functions
-# -- Compiling package altera_generic_pll_functions
-# -- Compiling module generic_pll
-# -- Importing package altera_lnsim_functions
-# -- Importing package altera_generic_pll_functions
-# -- Compiling module generic_cdr
-# -- Compiling module common_28nm_ram_pulse_generator
-# -- Compiling module common_28nm_ram_register
-# -- Compiling module common_28nm_ram_block
-# -- Compiling module generic_m20k
-# -- Compiling module generic_m10k
-# -- Compiling module common_28nm_mlab_cell_pulse_generator
-# -- Compiling module common_28nm_mlab_latch
-# -- Compiling module common_28nm_mlab_cell_core
-# -- Compiling module common_porta_latches
-# -- Compiling module generic_28nm_hp_mlab_cell_impl
-# -- Compiling module common_porta_registers
-# -- Compiling module generic_28nm_lc_mlab_cell_impl
-# -- Compiling module common_28nm_lutram_register
-# -- Compiling module generic_14nm_mlab_cell_impl
-# -- Compiling module common_14nm_lutram_register
-# -- Compiling module generic_mux
-# -- Compiling module generic_device_pll
-# -- Compiling module altera_mult_add
-# -- Compiling module altera_mult_add_rtl
-# -- Compiling module ama_signed_extension_function
-# -- Compiling module ama_dynamic_signed_function
-# -- Compiling module ama_register_function
-# -- Compiling module ama_register_with_ext_function
-# -- Compiling module ama_data_split_reg_ext_function
-# -- Compiling module ama_coef_reg_ext_function
-# -- Compiling module ama_adder_function
-# -- Compiling module ama_multiplier_function
-# -- Compiling module ama_preadder_function
-# -- Compiling module ama_chainout_adder_accumulator_function
-# -- Compiling module ama_systolic_adder_function
-# -- Compiling module ama_scanchain
-# -- Compiling module ama_latency_function
-# -- Compiling module altera_pll_reconfig_tasks
-# -- Compiling module altera_syncram
-# -- Compiling module altera_syncram_forwarding_logic
-# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
-# -- Compiling module altera_stratixv_pll
-# -- Compiling module altera_arriav_pll
-# -- Compiling module altera_arriavgz_pll
-# -- Compiling module altera_cyclonev_pll
-# -- Compiling module altera_pll
-# -- Compiling module dps_extra_kick
-# -- Compiling module dprio_init
-# -- Compiling module dps_pulse_gen
-# -- Compiling module altera_iopll
-# -- Compiling module dps_pulse_gen_iopll
-# -- Compiling module twentynm_iopll_arlol
-# -- Compiling module fourteennm_altera_iopll
-# -- Compiling module dps_pulse_gen_fourteennm_iopll
-# -- Compiling package fourteennm_iopll_functions
-# -- Compiling module fourteennm_simple_iopll
-# -- Importing package fourteennm_iopll_functions
-# -- Compiling module fourteennm_sub_iopll
-# -- Compiling module twentynm_iopll_ip
-# -- Compiling module altera_iopll_rotation_lcells
-# -- Compiling module altera_pll_dps_lcell_comb
-# -- Compiling module iopll_bootstrap
-# 
-# Top level modules:
-# 	generic_cdr
-# 	generic_m20k
-# 	generic_m10k
-# 	common_porta_latches
-# 	generic_28nm_hp_mlab_cell_impl
-# 	generic_28nm_lc_mlab_cell_impl
-# 	generic_14nm_mlab_cell_impl
-# 	generic_mux
-# 	generic_device_pll
-# 	altera_mult_add
-# 	altera_pll_reconfig_tasks
-# 	altera_syncram
-# 	altera_pll
-# 	altera_iopll
-# 	fourteennm_altera_iopll
-# 	fourteennm_simple_iopll
-# End time: 09:15:12 on Oct 21,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cycloneiv_hssi_ver
-# vmap cycloneiv_hssi_ver ./verilog_libs/cycloneiv_hssi_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap cycloneiv_hssi_ver ./verilog_libs/cycloneiv_hssi_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cycloneiv_hssi_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_hssi_atoms.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:13 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work cycloneiv_hssi_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_hssi_atoms.v 
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_reg
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_out_block
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_parallel_register
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_ser
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_div_by_2
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_clk_gen
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_rcv_det_sync
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_rcv_det_fsm
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_rcv_det_control
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det_rcv_det_digital
-# -- Compiling module cycloneiv_hssi_tx_pma_sub_tx_rx_det
-# -- Compiling module cycloneiv_hssi_tx_pma
-# -- Compiling module cycloneiv_hssi_rx_pma_sub_deser
-# -- Compiling module cycloneiv_hssi_rx_pma_sub_clkdiv
-# -- Compiling module cycloneiv_hssi_rx_pma
-# -- Compiling module cycloneiv_hssi_pcs_reset
-# -- Compiling module cycloneiv_hssi_digi_chnl_hip_spt
-# -- Compiling module cycloneiv_hssi_phystatus_generator_fsm
-# -- Compiling module cycloneiv_hssi_phystatus_generator
-# -- Compiling module cycloneiv_hssi_rx_pipe_interface
-# -- Compiling module cycloneiv_hssi_tx_pipe_interface
-# -- Compiling module cycloneiv_hssi_q_pipe_interface_top
-# -- Compiling module cycloneiv_hssi_tx_digis_txclk_gating
-# -- Compiling module cycloneiv_hssi_tx_digi_txclk_ctl
-# -- Compiling module cycloneiv_hssi_tx_digis_ram8x49_syn
-# -- Compiling module cycloneiv_hssi_tx_digis_ph_fifo
-# -- Compiling module cycloneiv_hssi_tx_digi_tx_ctrl
-# -- Compiling module cycloneiv_hssi_tx_digi_bist_gen
-# -- Compiling module cycloneiv_hssi_tx_digi_prbs_gen
-# -- Compiling module cycloneiv_hssi_tx_digi_enc_chnl_top
-# -- Compiling module cycloneiv_hssi_tx_digi_iq_pipe_tx
-# -- Compiling module cycloneiv_hssi_tx_digi
-# -- Compiling module cycloneiv_hssi_tx_pcs
-# -- Compiling module cycloneiv_hssi_cmu_dprio_map
-# -- Compiling module cycloneiv_hssi_cmu_dprio_top
-# -- Compiling module cycloneiv_hssi_rx_digis_ph_fifo
-# -- Compiling module cycloneiv_hssi_rx_digis_ram16x14_syn
-# -- Compiling module cycloneiv_hssi_rx_digis_ram20x16_syn
-# -- Compiling module cycloneiv_hssi_rx_digis_ram8x70_syn
-# -- Compiling module cycloneiv_hssi_rx_digis_rxclk_gating
-# -- Compiling module cycloneiv_hssi_rx_digi_rxclk_ctl
-# -- Compiling module cycloneiv_hssi_rx_digi_auto_speed_neg
-# -- Compiling module cycloneiv_hssi_rx_digi_bist_ver
-# -- Compiling module cycloneiv_hssi_rx_digi_cdr_ctrl
-# -- Compiling module cycloneiv_hssi_rx_digi_comp_chnl_top
-# -- Compiling module cycloneiv_hssi_rx_digi_rx_ctrl
-# -- Compiling module cycloneiv_hssi_rx_digi_dec_chnl_top
-# -- Compiling module cycloneiv_hssi_rx_digi_dskw_fifo
-# -- Compiling module cycloneiv_hssi_rx_digi_freqdet
-# -- Compiling module cycloneiv_hssi_rx_digi_eii_module
-# -- Compiling module cycloneiv_hssi_rx_digi_pcs_channel_testbus
-# -- Compiling module cycloneiv_hssi_rx_digi_iq_pipe_rx
-# -- Compiling module cycloneiv_hssi_rx_digi_prbs_ver
-# -- Compiling module cycloneiv_hssi_rx_digi_wordalign
-# -- Compiling module cycloneiv_hssi_rx_digi
-# -- Compiling module cycloneiv_hssi_rx_pcs
-# -- Compiling module cycloneiv_hssi_dskw_sm
-# -- Compiling module cycloneiv_hssi_tx_sm
-# -- Compiling module cycloneiv_hssi_rcv_sm
-# -- Compiling module cycloneiv_hssi_cmu_chnl_reset
-# -- Compiling module cycloneiv_hssi_cmu_quad_reset
-# -- Compiling module cycloneiv_hssi_cmu_auto_speed_neg
-# -- Compiling module cycloneiv_hssi_cmu_clk_gating
-# -- Compiling module cycloneiv_hssi_cmu_clk_ctl
-# -- Compiling module cycloneiv_hssi_cmu_rx_ctrl
-# -- Compiling module cycloneiv_hssi_cmu_rxclk_gating
-# -- Compiling module cycloneiv_hssi_cmu_rxclk_ctl
-# -- Compiling module cycloneiv_hssi_cmu_tx_ctrl
-# -- Compiling module cycloneiv_hssi_cmu_txclk_gating
-# -- Compiling module cycloneiv_hssi_cmu_txclk_ctl
-# -- Compiling module cycloneiv_hssi_cmu_dprio_bit
-# -- Compiling module cycloneiv_hssi_cmu_dprio_bit_pma
-# -- Compiling module cycloneiv_hssi_cmu_dprio_16bit
-# -- Compiling module cycloneiv_hssi_cmu_dprio_16bit_pma
-# -- Compiling module cycloneiv_hssi_cmu_dprio_reg_chnl
-# -- Compiling module cycloneiv_hssi_cmu_dprio_chnl_bus_out_mux
-# -- Compiling module cycloneiv_hssi_cmu_dprio_chnl_top
-# -- Compiling module cycloneiv_hssi_cmu_dprio_status
-# -- Compiling module cycloneiv_hssi_cmu_dprio_addr
-# -- Compiling module cycloneiv_hssi_cmu_dprio_cnt
-# -- Compiling module cycloneiv_hssi_cmu_dprio_ctl_data
-# -- Compiling module cycloneiv_hssi_cmu_dprio_sm
-# -- Compiling module cycloneiv_hssi_cmu_dprio_reg_centrl
-# -- Compiling module cycloneiv_hssi_cmu_dprio_centrl_bus_out_mux
-# -- Compiling module cycloneiv_hssi_cmu_dprio_centrl_top
-# -- Compiling module cycloneiv_hssi_cmu_dprio_map_index
-# -- Compiling module cycloneiv_hssi_cmu
-# -- Compiling module cycloneiv_hssi_calibration_block
-# 
-# Top level modules:
-# 	cycloneiv_hssi_tx_pma
-# 	cycloneiv_hssi_rx_pma
-# 	cycloneiv_hssi_tx_pcs
-# 	cycloneiv_hssi_rx_pcs
-# 	cycloneiv_hssi_cmu_dprio_centrl_top
-# 	cycloneiv_hssi_cmu
-# 	cycloneiv_hssi_calibration_block
-# End time: 09:15:15 on Oct 21,2022, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cycloneiv_pcie_hip_ver
-# vmap cycloneiv_pcie_hip_ver ./verilog_libs/cycloneiv_pcie_hip_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap cycloneiv_pcie_hip_ver ./verilog_libs/cycloneiv_pcie_hip_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cycloneiv_pcie_hip_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_pcie_hip_atoms.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:15 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work cycloneiv_pcie_hip_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_pcie_hip_atoms.v 
-# -- Compiling module cycloneiv_pciehip_param
-# -- Compiling module cycloneiv_pciehip_clkmux
-# -- Compiling module cycloneiv_pciehip_dprio_bit
-# -- Compiling module cycloneiv_pciehip_dprio_16bit
-# -- Compiling module cycloneiv_pciehip_dprio_addr
-# -- Compiling module cycloneiv_pciehip_dprio_cnt
-# -- Compiling module cycloneiv_pciehip_dprio_ctl_data
-# -- Compiling module cycloneiv_pciehip_dprio_sm
-# -- Compiling module cycloneiv_pciehip_dprio_bus_out_mux
-# -- Compiling module cycloneiv_pciehip_dprio_reg
-# -- Compiling module cycloneiv_pciehip_dprio_reg_top
-# -- Compiling module cycloneiv_pciehip_hip_dprio_top
-# -- Compiling module cycloneiv_pciehip_compute_bit
-# -- Compiling module cycloneiv_pciehip_ecc_gen
-# -- Compiling module cycloneiv_pciehip_ecc_chk
-# -- Compiling module cycloneiv_pciehip_ecc_decoder
-# -- Compiling module cycloneiv_pciehip_pulse_ext
-# -- Compiling module cycloneiv_pciehip_hip_mram
-# -- Compiling module cycloneiv_pciehip_mram_top
-# -- Compiling module cycloneiv_pciehip_pciexp_dcfiforam
-# -- Compiling module cycloneiv_pciehip_pciexp_dcram_rtry
-# -- Compiling module cycloneiv_pciehip_pciexp_dcram_rxvc
-# -- Compiling module cycloneiv_pciehip_iei_detect
-# -- Compiling module cycloneiv_pciehip_pciexp_top_hip
-# -- Compiling module cycloneiv_pciehip_hip_top
-# -- Compiling module cycloneiv_hssi_pcie_hip
-# 
-# Top level modules:
-# 	cycloneiv_hssi_pcie_hip
-# End time: 09:15:23 on Oct 21,2022, Elapsed time: 0:00:08
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cycloneiv_ver
-# vmap cycloneiv_ver ./verilog_libs/cycloneiv_ver
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap cycloneiv_ver ./verilog_libs/cycloneiv_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cycloneiv_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_atoms.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:23 on Oct 21,2022
-# vlog -reportprogress 300 -vlog01compat -work cycloneiv_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cycloneiv_atoms.v 
-# -- Compiling UDP CYCLONEIV_PRIM_DFFE
-# -- Compiling UDP CYCLONEIV_PRIM_DFFEAS
-# -- Compiling UDP CYCLONEIV_PRIM_DFFEAS_HIGH
-# -- Compiling module cycloneiv_dffe
-# -- Compiling module cycloneiv_mux21
-# -- Compiling module cycloneiv_mux41
-# -- Compiling module cycloneiv_and1
-# -- Compiling module cycloneiv_and16
-# -- Compiling module cycloneiv_bmux21
-# -- Compiling module cycloneiv_b17mux21
-# -- Compiling module cycloneiv_nmux21
-# -- Compiling module cycloneiv_b5mux21
-# -- Compiling module cycloneiv_latch
-# -- Compiling module cycloneiv_routing_wire
-# -- Compiling module cycloneiv_lcell_comb
-# -- Compiling module cycloneiv_io_ibuf
-# -- Compiling module cycloneiv_io_obuf
-# -- Compiling module cycloneiv_ddio_out
-# -- Compiling module cycloneiv_ddio_oe
-# -- Compiling module cycloneiv_ff
-# -- Compiling module cycloneiv_ram_pulse_generator
-# -- Compiling module cycloneiv_ram_register
-# -- Compiling module cycloneiv_ram_block
-# -- Compiling module cycloneiv_mac_data_reg
-# -- Compiling module cycloneiv_mac_sign_reg
-# -- Compiling module cycloneiv_mac_mult_internal
-# -- Compiling module cycloneiv_mac_mult
-# -- Compiling module cycloneiv_mac_out
-# -- Compiling module cycloneiv_io_pad
-# -- Compiling module cycloneiv_ena_reg
-# -- Compiling module cycloneiv_clkctrl
-# -- Compiling module cycloneiv_pseudo_diff_out
-# -- Compiling module cycloneiv_rublock
-# -- Compiling module cycloneiv_termination_ctrl
-# -- Compiling module cycloneiv_termination_rupdn
-# -- Compiling module cycloneiv_termination
-# -- Compiling module cycloneiv_jtag
-# -- Compiling module cycloneiv_crcblock
-# -- Compiling module cycloneiv_oscillator
-# -- Compiling module cycloneiv_controller
-# -- Compiling module cycloneiv_asmiblock
-# -- Compiling module cycloneiv_m_cntr
-# -- Compiling module cycloneiv_n_cntr
-# -- Compiling module cycloneiv_scale_cntr
-# -- Compiling module cycloneiv_post_divider
-# -- Compiling module cycloneiv_pll_reg
-# -- Compiling module cycloneiv_pll
-# 
-# Top level modules:
-# 	cycloneiv_dffe
-# 	cycloneiv_and1
-# 	cycloneiv_and16
-# 	cycloneiv_bmux21
-# 	cycloneiv_b17mux21
-# 	cycloneiv_nmux21
-# 	cycloneiv_b5mux21
-# 	cycloneiv_lcell_comb
-# 	cycloneiv_io_ibuf
-# 	cycloneiv_io_obuf
-# 	cycloneiv_ddio_out
-# 	cycloneiv_ddio_oe
-# 	cycloneiv_ff
-# 	cycloneiv_ram_block
-# 	cycloneiv_mac_mult
-# 	cycloneiv_mac_out
-# 	cycloneiv_io_pad
-# 	cycloneiv_clkctrl
-# 	cycloneiv_pseudo_diff_out
-# 	cycloneiv_rublock
-# 	cycloneiv_termination
-# 	cycloneiv_jtag
-# 	cycloneiv_crcblock
-# 	cycloneiv_oscillator
-# 	cycloneiv_controller
-# 	cycloneiv_asmiblock
-# 	cycloneiv_pll_reg
-# 	cycloneiv_pll
-# End time: 09:15:24 on Oct 21,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:24 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv 
-# -- Compiling module mux2
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv 
+# -- Compiling module multiplicador
 # 
 # Top level modules:
-# 	mux2
-# End time: 09:15:24 on Oct 21,2022, Elapsed time: 0:00:00
+# 	multiplicador
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:24 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv 
-# -- Compiling module flipflop
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv 
+# -- Compiling module FullAdder
 # 
 # Top level modules:
-# 	flipflop
-# End time: 09:15:24 on Oct 21,2022, Elapsed time: 0:00:00
+# 	FullAdder
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:24 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv 
-# -- Compiling module Fetch
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv 
+# -- Compiling module divisor
+# ** Warning: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
-# 	Fetch
-# End time: 09:15:25 on Oct 21,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:25 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv 
-# -- Compiling module adder
+# 	divisor
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv 
+# -- Compiling module Complement
 # 
 # Top level modules:
-# 	adder
-# End time: 09:15:25 on Oct 21,2022, Elapsed time: 0:00:00
+# 	Complement
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:25 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv 
-# -- Compiling module instructionMemory
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv 
+# -- Compiling module ALU
 # 
 # Top level modules:
-# 	instructionMemory
-# End time: 09:15:25 on Oct 21,2022, Elapsed time: 0:00:00
+# 	ALU
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura\ de\ Computadores\ 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests {C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:15:25 on Oct 21,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests" C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv 
-# -- Compiling module testFetch
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv 
+# -- Compiling module Adder_Substractor
 # 
 # Top level modules:
-# 	testFetch
-# End time: 09:15:25 on Oct 21,2022, Elapsed time: 0:00:00
+# 	Adder_Substractor
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testFecth
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" testFecth 
-# Start time: 09:15:26 on Oct 21,2022
-# ** Error: (vsim-3170) Could not find 'testFecth'.
-#         Searched libraries:
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/altera_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/lpm_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/sgate_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/altera_mf_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/altera_lnsim_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/cycloneiv_hssi_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/cycloneiv_pcie_hip_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/verilog_libs/cycloneiv_ver
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/rtl_work
-#             C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./VectorizedCPU_run_msim_rtl_verilog.do PAUSED at line 52
-vsim work.testFetch
-# vsim work.testFetch 
-# Start time: 09:15:26 on Oct 21,2022
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:50 on Oct 23,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv 
+# -- Compiling module testALU
+# 
+# Top level modules:
+# 	testALU
+# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testALU
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" testALU 
+# Start time: 20:42:50 on Oct 23,2022
 # Loading sv_std.std
-# Loading work.testFetch
-# Loading work.Fetch
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flipflop
-# Loading work.instructionMemory
-# ** Error: (vsim-7039) The parameter 'PC_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 2
-# ** Error: (vsim-7039) The parameter 'INSTRUCTION_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 3
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./VectorizedCPU_run_msim_rtl_verilog.do PAUSED at line 52
-vsim work.testFetch
-# vsim work.testFetch 
-# Start time: 09:15:26 on Oct 21,2022
-# Loading sv_std.std
-# Loading work.testFetch
-# Loading work.Fetch
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flipflop
-# Loading work.instructionMemory
-# ** Error: (vsim-7039) The parameter 'PC_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 2
-# ** Error: (vsim-7039) The parameter 'INSTRUCTION_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 3
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./VectorizedCPU_run_msim_rtl_verilog.do PAUSED at line 52
-vsim work.testFetch
-# vsim work.testFetch 
-# Start time: 09:15:26 on Oct 21,2022
-# Loading sv_std.std
-# Loading work.testFetch
-# Loading work.Fetch
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flipflop
-# Loading work.instructionMemory
-# ** Error: (vsim-7039) The parameter 'PC_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 2
-# ** Error: (vsim-7039) The parameter 'INSTRUCTION_WIDTH' has not been given a value.
-#    Time: 0 ps  Iteration: 0  Instance: /testFetch File: C:/Users/User/Desktop/X_SEMESTRE_2022/Arquitectura de Computadores 2/Proyecto_2/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 3
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./VectorizedCPU_run_msim_rtl_verilog.do PAUSED at line 52
-# End time: 09:19:07 on Oct 21,2022, Elapsed time: 0:03:41
-# Errors: 7, Warnings: 0
+# Loading work.testALU
+# Loading work.ALU
+# Loading work.Adder_Substractor
+# Loading work.Complement
+# Loading work.multiplicador
+# Loading work.divisor
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv(26): [PCDPC] - Port size (1) does not match connection size (32) for port 'SUBS'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/Sumador File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'SUBS'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/Restador File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# =============ALU SUM=============
+# ============= TEST 1 SUCCESS A = 000000000000000000000000000000000000000000000001, B = 000000000000000000000000000000000000000000000001 =============
+# ============= TEST 2 SUCCESS A = 000000000000000000000000000000000000000000000111, B = 000000000000000000000000000000000000000000000110 =============
+# ============= TEST 3 SUCCESS A = 000000000000000000000000000000000000000000000011, B = 000000000000000000000000000000000000000000000010 =============
+# ============= TEST 4 SUCCESS A = 000000000000000000000000000000000000000000000100, B = 000000000000000000000000000000000000000000000010 =============
+# End time: 20:44:55 on Oct 23,2022, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 2
