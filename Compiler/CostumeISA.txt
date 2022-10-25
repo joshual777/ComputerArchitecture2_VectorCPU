@@ -1,0 +1,45 @@
+//Valores insertados por el usuario
+MOV r1, 255   //R
+MOV r2, 50   // G
+MOV r3, 20   //B
+MOV r4, 50   // T
+
+MOV r10, 1 //Constante 1 para restas y sumas
+//Calcular el step que se va a ir restando hasta llegar a 0
+DIV r5, r1, 481   //RS
+//Calcula el porcentaje del degradado
+DIV r4, r4, 100   //%T degradado
+// Calcula el porcentaje de la imagen
+SUB r6, r10, r4    //% imag
+//Contadores de ciclos
+MOV r7, 0 //Contador x
+MOV r8, 0 //Contador y
+//Carga la posicion de memoria donde esta la imagen de entrada, rojo
+MOV r12, 000 //Pos rojo
+
+_Rojo:
+CMP r5, 0   //Verifica si no hay cambio en el color y si es asi cambia al siguiente
+BE _PVERDE 
+CMP r7, 480 // Verifica si ya termino el rojo
+BE _PVERDE
+CMP r8, 80 //Verifica si debe pasar a la siguiente fila
+BE _resta
+VLDR v1, r12 //Carga el vector correspondiente
+VSMUL v1, v1, r6 //Multiplica la imagen por su porcentaje
+MULT r11, r4, 000 //Multiplica el degradado por su porcentaje
+VSADD v1, v1, r11 //Suma ambos
+ADD r8, r8, r10 //Aumenta el contador
+ADD r12, r12, r12 //Aumenta la dir de memoria
+JMP _Rojo
+
+
+_restaR:
+ADD r7, r7, r10 //Suma el contador en x
+SUB r1, r1, r5 //Le resta el step al color para el degradado
+MOV r8, 0 //Reinicia a 0 el contador de x
+JMP _Rojo
+
+//Falta verde
+ _PVERDE:
+//Falta azul
+//Falta pintar
