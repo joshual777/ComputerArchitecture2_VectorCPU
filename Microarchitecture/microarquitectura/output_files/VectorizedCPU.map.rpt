@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VectorizedCPU
-Sun Oct 23 20:41:53 2022
+Tue Oct 25 10:11:56 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,22 +16,48 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
- 12. Parameter Settings for User Entity Instance: Adder_Substractor:Sumador
- 13. Parameter Settings for User Entity Instance: Adder_Substractor:Sumador|Complement:FullComplement
- 14. Parameter Settings for User Entity Instance: Adder_Substractor:Restador
- 15. Parameter Settings for User Entity Instance: Adder_Substractor:Restador|Complement:FullComplement
- 16. Parameter Settings for User Entity Instance: multiplicador:Multiplicador
- 17. Parameter Settings for User Entity Instance: divisor:Divisor
- 18. Parameter Settings for Inferred Entity Instance: divisor:Divisor|lpm_divide:Div0
- 19. Parameter Settings for Inferred Entity Instance: multiplicador:Multiplicador|lpm_mult:Mult0
- 20. lpm_mult Parameter Settings by Entity Instance
- 21. Port Connectivity Checks: "Adder_Substractor:Restador"
- 22. Port Connectivity Checks: "Adder_Substractor:Sumador"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
- 26. Analysis & Synthesis Suppressed Messages
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALUV
+ 12. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor
+ 13. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1
+ 14. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|Complement:FullComplement
+ 15. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2
+ 16. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|Complement:FullComplement
+ 17. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3
+ 18. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|Complement:FullComplement
+ 19. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4
+ 20. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|Complement:FullComplement
+ 21. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5
+ 22. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|Complement:FullComplement
+ 23. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6
+ 24. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|Complement:FullComplement
+ 25. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7
+ 26. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|Complement:FullComplement
+ 27. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8
+ 28. Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|Complement:FullComplement
+ 29. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier
+ 30. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1
+ 31. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2
+ 32. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3
+ 33. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4
+ 34. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5
+ 35. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6
+ 36. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7
+ 37. Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8
+ 38. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0
+ 39. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0
+ 40. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0
+ 41. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|lpm_mult:Mult0
+ 42. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|lpm_mult:Mult0
+ 43. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|lpm_mult:Mult0
+ 44. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|lpm_mult:Mult0
+ 45. Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|lpm_mult:Mult0
+ 46. lpm_mult Parameter Settings by Entity Instance
+ 47. Port Connectivity Checks: "vectorFPMultiplier:vectorFPMultiplier"
+ 48. Port Connectivity Checks: "vectorAdderSubstractor:vectorAdderSubstractor"
+ 49. Post-Synthesis Netlist Statistics for Top Partition
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
+ 52. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -57,19 +83,19 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 23 20:41:53 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 25 10:11:56 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; VectorizedCPU                               ;
-; Top-level Entity Name              ; ALU                                         ;
+; Top-level Entity Name              ; ALUV                                        ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 578                                         ;
-;     Total combinational functions  ; 578                                         ;
+; Total logic elements               ; 234                                         ;
+;     Total combinational functions  ; 234                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 61                                          ;
+; Total pins                         ; 196                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 2                                           ;
+; Embedded Multiplier 9-bit elements ; 8                                           ;
 ; Total GXB Receiver Channel PCS     ; 0                                           ;
 ; Total GXB Receiver Channel PMA     ; 0                                           ;
 ; Total GXB Transmitter Channel PCS  ; 0                                           ;
@@ -84,7 +110,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CGX150DF31C7    ;                    ;
-; Top-level entity name                                            ; ALU                ; VectorizedCPU      ;
+; Top-level entity name                                            ; ALUV               ; VectorizedCPU      ;
 ; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
 ; Maximum processors allowed for parallel compilation              ; All                ;                    ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -181,106 +207,141 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Execute/ALU/multiplicador.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv     ;         ;
-; Execute/ALU/FullAdder.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv         ;         ;
-; Execute/ALU/divisor.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv           ;         ;
-; Execute/ALU/Complement.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv        ;         ;
-; Execute/ALU/ALU.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv               ;         ;
-; Execute/ALU/Adder_Substractor.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                               ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                                              ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                          ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                               ;         ;
-; db/lpm_divide_b6p.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/lpm_divide_b6p.tdf            ;         ;
-; db/abs_divider_cdg.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/abs_divider_cdg.tdf           ;         ;
-; db/alt_u_div_gef.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/alt_u_div_gef.tdf             ;         ;
-; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/add_sub_1tc.tdf               ;         ;
-; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/add_sub_2tc.tdf               ;         ;
-; db/lpm_abs_g4a.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/lpm_abs_g4a.tdf               ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                 ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                              ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                                 ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                 ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                 ;         ;
-; db/mult_6at.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/mult_6at.tdf                  ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                    ;
++----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                    ; Library ;
++----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Execute/VECTOR_ALU/vectorAdderSubstractor.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv ;         ;
+; Execute/ALU/multiplicador.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv                 ;         ;
+; Execute/ALU/FullAdder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv                     ;         ;
+; Execute/ALU/Complement.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv                    ;         ;
+; Execute/ALU/Adder_Substractor.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv             ;         ;
+; Execute/VECTOR_ALU/ALUV.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv                   ;         ;
+; Execute/VECTOR_ALU/vectorFPMultiplier.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv     ;         ;
+; lpm_mult.tdf                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                             ;         ;
+; aglobal181.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                                           ;         ;
+; lpm_add_sub.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                          ;         ;
+; multcore.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                                             ;         ;
+; bypassff.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                             ;         ;
+; altshift.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                             ;         ;
+; db/mult_17t.tdf                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/mult_17t.tdf                              ;         ;
++----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 61               ;
-;                          ;                  ;
-; DSP block 9-bit elements ; 2                ;
-;                          ;                  ;
-; Maximum fan-out node     ; sel[1]~input     ;
-; Maximum fan-out          ; 66               ;
-; Total fan-out            ; 2057             ;
-; Average fan-out          ; 2.93             ;
-+--------------------------+------------------+
++----------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary  ;
++--------------------------+-------------------+
+; Resource                 ; Usage             ;
++--------------------------+-------------------+
+; I/O pins                 ; 196               ;
+;                          ;                   ;
+; DSP block 9-bit elements ; 8                 ;
+;                          ;                   ;
+; Maximum fan-out node     ; selector[0]~input ;
+; Maximum fan-out          ; 105               ;
+; Total fan-out            ; 1320              ;
+; Average fan-out          ; 2.06              ;
++--------------------------+-------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                          ;
-+-----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node                                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name       ; Library Name ;
-+-----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |ALU                                                      ; 578 (84)            ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 61   ; 0            ; |ALU                                                                                                                                   ; ALU               ; work         ;
-;    |Adder_Substractor:Restador|                           ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador                                                                                                        ; Adder_Substractor ; work         ;
-;       |FullAdder:generate_Adder_Substractor[10].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[10].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[11].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[11].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[12].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[12].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[13].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[13].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[14].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[14].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[15].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[15].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[16].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[16].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[17].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[17].bitAdder                                                      ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[1].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[1].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[2].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[2].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[4].bitAdder|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[4].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[5].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[5].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[6].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[6].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[7].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[7].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[8].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[8].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[9].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[9].bitAdder                                                       ; FullAdder         ; work         ;
-;    |Adder_Substractor:Sumador|                            ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador                                                                                                         ; Adder_Substractor ; work         ;
-;       |FullAdder:generate_Adder_Substractor[10].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[10].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[11].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[11].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[12].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[12].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[13].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[13].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[14].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[14].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[15].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[15].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[16].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[16].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[17].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[17].bitAdder                                                       ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[1].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[1].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[2].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[2].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[3].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[3].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[4].bitAdder|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[4].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[5].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[5].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[6].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[6].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[7].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[7].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[8].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[8].bitAdder                                                        ; FullAdder         ; work         ;
-;       |FullAdder:generate_Adder_Substractor[9].bitAdder|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[9].bitAdder                                                        ; FullAdder         ; work         ;
-;    |divisor:Divisor|                                      ; 446 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor                                                                                                                   ; divisor           ; work         ;
-;       |lpm_divide:Div0|                                   ; 446 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0                                                                                                   ; lpm_divide        ; work         ;
-;          |lpm_divide_b6p:auto_generated|                  ; 446 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated                                                                     ; lpm_divide_b6p    ; work         ;
-;             |abs_divider_cdg:divider|                     ; 446 (35)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider                                             ; abs_divider_cdg   ; work         ;
-;                |alt_u_div_gef:divider|                    ; 357 (354)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider|alt_u_div_gef:divider                       ; alt_u_div_gef     ; work         ;
-;                   |add_sub_1tc:add_sub_0|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider|alt_u_div_gef:divider|add_sub_1tc:add_sub_0 ; add_sub_1tc       ; work         ;
-;                   |add_sub_2tc:add_sub_1|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider|alt_u_div_gef:divider|add_sub_2tc:add_sub_1 ; add_sub_2tc       ; work         ;
-;                |lpm_abs_g4a:my_abs_den|                   ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider|lpm_abs_g4a:my_abs_den                      ; lpm_abs_g4a       ; work         ;
-;                |lpm_abs_g4a:my_abs_num|                   ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU|divisor:Divisor|lpm_divide:Div0|lpm_divide_b6p:auto_generated|abs_divider_cdg:divider|lpm_abs_g4a:my_abs_num                      ; lpm_abs_g4a       ; work         ;
-;    |multiplicador:Multiplicador|                          ; 10 (10)             ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |ALU|multiplicador:Multiplicador                                                                                                       ; multiplicador     ; work         ;
-;       |lpm_mult:Mult0|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |ALU|multiplicador:Multiplicador|lpm_mult:Mult0                                                                                        ; lpm_mult          ; work         ;
-;          |mult_6at:auto_generated|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |ALU|multiplicador:Multiplicador|lpm_mult:Mult0|mult_6at:auto_generated                                                                ; mult_6at          ; work         ;
-+-----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name            ; Library Name ;
++-------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |ALUV                                                       ; 234 (138)           ; 0 (0)                     ; 0           ; 8            ; 8       ; 0         ; 0         ; 196  ; 0            ; |ALUV                                                                                                                                    ; ALUV                   ; work         ;
+;    |vectorAdderSubstractor:vectorAdderSubstractor|          ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor                                                                                      ; vectorAdderSubstractor ; work         ;
+;       |Adder_Substractor:adderSubstractor1|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor2|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor3|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor4|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor6|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor7|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;       |Adder_Substractor:adderSubstractor8|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8                                                  ; Adder_Substractor      ; work         ;
+;          |FullAdder:generate_Adder_Substractor[0].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[0].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[1].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[1].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[2].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[2].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[3].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[3].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[4].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[4].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[5].bitAdder| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[5].bitAdder ; FullAdder              ; work         ;
+;          |FullAdder:generate_Adder_Substractor[6].bitAdder| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|FullAdder:generate_Adder_Substractor[6].bitAdder ; FullAdder              ; work         ;
+;    |vectorFPMultiplier:vectorFPMultiplier|                  ; 0 (0)               ; 0 (0)                     ; 0           ; 8            ; 8       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier                                                                                              ; vectorFPMultiplier     ; work         ;
+;       |multiplicador:Multiplicador1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador2|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador3|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador4|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador5|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador6|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador7|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
+;       |multiplicador:Multiplicador8|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8                                                                 ; multiplicador          ; work         ;
+;          |lpm_mult:Mult0|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|lpm_mult:Mult0                                                  ; lpm_mult               ; work         ;
+;             |mult_17t:auto_generated|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0         ; 0    ; 0            ; |ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|lpm_mult:Mult0|mult_17t:auto_generated                          ; mult_17t               ; work         ;
++-------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -289,8 +350,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+-------------+
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 1           ;
+; Simple Multipliers (9-bit)            ; 8           ;
+; Simple Multipliers (18-bit)           ; 0           ;
 ; Simple Multipliers (36-bit)           ; 0           ;
 ; Multiply Accumulators (18-bit)        ; 0           ;
 ; Two-Multipliers Adders (9-bit)        ; 0           ;
@@ -298,8 +359,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Four-Multipliers Adders (9-bit)       ; 0           ;
 ; Four-Multipliers Adders (18-bit)      ; 0           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 2           ;
-; Signed Embedded Multipliers           ; 1           ;
+; Embedded Multiplier 9-bit elements    ; 8           ;
+; Signed Embedded Multipliers           ; 8           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
@@ -328,176 +389,681 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 8:1                ; 17 bits   ; 85 LEs        ; 51 LEs               ; 34 LEs                 ; No         ; |ALU|Mux16                 ;
+; 16:1               ; 64 bits   ; 640 LEs       ; 128 LEs              ; 512 LEs                ; No         ; |ALUV|Selector63           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALUV ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                              ;
+; LANES          ; 8     ; Signed Integer                              ;
+; SELECTOR_SIZE  ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder_Substractor:Sumador ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                    ;
+; LANES          ; 8     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder_Substractor:Sumador|Complement:FullComplement ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder_Substractor:Restador ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder_Substractor:Restador|Complement:FullComplement ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:Multiplicador ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; n              ; 18    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor2|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: divisor:Divisor ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; n              ; 18    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: divisor:Divisor|lpm_divide:Div0 ;
-+------------------------+----------------+----------------------------------------+
-; Parameter Name         ; Value          ; Type                                   ;
-+------------------------+----------------+----------------------------------------+
-; LPM_WIDTHN             ; 18             ; Untyped                                ;
-; LPM_WIDTHD             ; 18             ; Untyped                                ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                ;
-; LPM_PIPELINE           ; 0              ; Untyped                                ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
-; CBXI_PARAMETER         ; lpm_divide_b6p ; Untyped                                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
-+------------------------+----------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor3|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: multiplicador:Multiplicador|lpm_mult:Mult0 ;
-+------------------------------------------------+---------------+----------------------------+
-; Parameter Name                                 ; Value         ; Type                       ;
-+------------------------------------------------+---------------+----------------------------+
-; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE             ;
-; LPM_WIDTHA                                     ; 18            ; Untyped                    ;
-; LPM_WIDTHB                                     ; 18            ; Untyped                    ;
-; LPM_WIDTHP                                     ; 36            ; Untyped                    ;
-; LPM_WIDTHR                                     ; 36            ; Untyped                    ;
-; LPM_WIDTHS                                     ; 1             ; Untyped                    ;
-; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                    ;
-; LPM_PIPELINE                                   ; 0             ; Untyped                    ;
-; LATENCY                                        ; 0             ; Untyped                    ;
-; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                    ;
-; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                    ;
-; USE_EAB                                        ; OFF           ; Untyped                    ;
-; MAXIMIZE_SPEED                                 ; 6             ; Untyped                    ;
-; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                    ;
-; CARRY_CHAIN                                    ; MANUAL        ; Untyped                    ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K        ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                    ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                    ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                    ;
-; CBXI_PARAMETER                                 ; mult_6at      ; Untyped                    ;
-; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                    ;
-; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                    ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                    ;
-+------------------------------------------------+---------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor4|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor5|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor6|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor7|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor8|Complement:FullComplement ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                                     ;
-+---------------------------------------+--------------------------------------------+
-; Name                                  ; Value                                      ;
-+---------------------------------------+--------------------------------------------+
-; Number of entity instances            ; 1                                          ;
-; Entity Instance                       ; multiplicador:Multiplicador|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 18                                         ;
-;     -- LPM_WIDTHB                     ; 18                                         ;
-;     -- LPM_WIDTHP                     ; 36                                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                         ;
-;     -- USE_EAB                        ; OFF                                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                         ;
-+---------------------------------------+--------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                            ;
+; LANES          ; 8     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Adder_Substractor:Restador"                                                                                                                                                           ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; SUBS     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; SUBS[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Adder_Substractor:Sumador"                                                                                                                                                            ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; SUBS     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; SUBS[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                              ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHB                                     ; 8             ; Untyped                                                           ;
+; LPM_WIDTHP                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHR                                     ; 16            ; Untyped                                                           ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                           ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                           ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                           ;
+; LATENCY                                        ; 0             ; Untyped                                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                           ;
+; USE_EAB                                        ; OFF           ; Untyped                                                           ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                           ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                           ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                           ;
+; CBXI_PARAMETER                                 ; mult_17t      ; Untyped                                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                           ;
++------------------------------------------------+---------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                                            ;
++---------------------------------------+-----------------------------------------------------------------------------------+
+; Name                                  ; Value                                                                             ;
++---------------------------------------+-----------------------------------------------------------------------------------+
+; Number of entity instances            ; 8                                                                                 ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
+; Entity Instance                       ; vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 8                                                                                 ;
+;     -- LPM_WIDTHB                     ; 8                                                                                 ;
+;     -- LPM_WIDTHP                     ; 16                                                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                ;
+;     -- USE_EAB                        ; OFF                                                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                ;
++---------------------------------------+-----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vectorFPMultiplier:vectorFPMultiplier"                                                                   ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; N    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vectorAdderSubstractor:vectorAdderSubstractor"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -505,22 +1071,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 61                          ;
-; cycloneiii_lcell_comb ; 579                         ;
-;     arith             ; 185                         ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 184                         ;
-;     normal            ; 394                         ;
-;         0 data inputs ; 16                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 70                          ;
-;         4 data inputs ; 292                         ;
-; cycloneiii_mac_mult   ; 1                           ;
-; cycloneiii_mac_out    ; 1                           ;
+; boundary_port         ; 196                         ;
+; cycloneiii_lcell_comb ; 234                         ;
+;     normal            ; 234                         ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 224                         ;
+; cycloneiii_mac_mult   ; 8                           ;
+; cycloneiii_mac_out    ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 69.60                       ;
-; Average LUT depth     ; 55.30                       ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 4.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -529,7 +1090,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -539,7 +1100,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 23 20:41:37 2022
+    Info: Processing started: Tue Oct 25 10:11:43 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VectorizedCPU -c VectorizedCPU
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tests/testcpu.sv
@@ -592,9 +1153,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file fetch/a
     Info (12023): Found entity 1: adder File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv Line: 9
 Warning (12019): Can't analyze file -- file Execute/VECTOR_ALU/vectorAdder.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/aluv.sv
-    Info (12023): Found entity 1: ALUV File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file execute/vector_alu/vectormultiplier.sv
-    Info (12023): Found entity 1: vectorMultiplier File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorMultiplier.sv Line: 1
+    Info (12023): Found entity 1: ALUV File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 2
 Warning (12019): Can't analyze file -- file Execute/VECTOR_ALU/vectorDivider.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file decode/decode.sv
     Info (12023): Found entity 1: Decode File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv Line: 27
@@ -620,65 +1179,52 @@ Info (12021): Found 1 design units, including 1 entities, in source file tests/t
     Info (12023): Found entity 1: testFecth File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testFecth.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(41): created implicit net for "scalarData2Final" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 41
 Warning (10236): Verilog HDL Implicit Net warning at Execute.sv(48): created implicit net for "vectorData2Final" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv Line: 48
-Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "Adder_Substractor" for hierarchy "Adder_Substractor:Sumador" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 26
+Info (12127): Elaborating entity "ALUV" for the top level hierarchy
+Info (12128): Elaborating entity "vectorAdderSubstractor" for hierarchy "vectorAdderSubstractor:vectorAdderSubstractor" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 25
+Info (12128): Elaborating entity "Adder_Substractor" for hierarchy "vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv Line: 10
 Warning (10739): Verilog HDL warning at Adder_Substractor.sv(34): actual bit length 32 differs from formal bit length 1 File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 34
-Info (12128): Elaborating entity "Complement" for hierarchy "Adder_Substractor:Sumador|Complement:FullComplement" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 24
-Info (12128): Elaborating entity "FullAdder" for hierarchy "Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[0].bitAdder" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 32
-Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:Multiplicador" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 28
-Info (12128): Elaborating entity "divisor" for hierarchy "divisor:Divisor" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv Line: 29
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisor:Divisor|Div0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv Line: 10
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "multiplicador:Multiplicador|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
-Info (12130): Elaborated megafunction instantiation "divisor:Divisor|lpm_divide:Div0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv Line: 10
-Info (12133): Instantiated megafunction "divisor:Divisor|lpm_divide:Div0" with the following parameter: File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv Line: 10
-    Info (12134): Parameter "LPM_WIDTHN" = "18"
-    Info (12134): Parameter "LPM_WIDTHD" = "18"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_b6p.tdf
-    Info (12023): Found entity 1: lpm_divide_b6p File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/lpm_divide_b6p.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_cdg.tdf
-    Info (12023): Found entity 1: abs_divider_cdg File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/abs_divider_cdg.tdf Line: 26
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gef.tdf
-    Info (12023): Found entity 1: alt_u_div_gef File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/alt_u_div_gef.tdf Line: 26
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
-    Info (12023): Found entity 1: add_sub_1tc File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/add_sub_1tc.tdf Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
-    Info (12023): Found entity 1: add_sub_2tc File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/add_sub_2tc.tdf Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_g4a.tdf
-    Info (12023): Found entity 1: lpm_abs_g4a File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/lpm_abs_g4a.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "multiplicador:Multiplicador|lpm_mult:Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
-Info (12133): Instantiated megafunction "multiplicador:Multiplicador|lpm_mult:Mult0" with the following parameter: File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
-    Info (12134): Parameter "LPM_WIDTHA" = "18"
-    Info (12134): Parameter "LPM_WIDTHB" = "18"
-    Info (12134): Parameter "LPM_WIDTHP" = "36"
-    Info (12134): Parameter "LPM_WIDTHR" = "36"
+Info (12128): Elaborating entity "Complement" for hierarchy "vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|Complement:FullComplement" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 24
+Info (12128): Elaborating entity "FullAdder" for hierarchy "vectorAdderSubstractor:vectorAdderSubstractor|Adder_Substractor:adderSubstractor1|FullAdder:generate_Adder_Substractor[0].bitAdder" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv Line: 32
+Info (12128): Elaborating entity "vectorFPMultiplier" for hierarchy "vectorFPMultiplier:vectorFPMultiplier" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv Line: 35
+Warning (10034): Output port "N" at vectorFPMultiplier.sv(6) has no driver File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv Line: 6
+Info (12128): Elaborating entity "multiplicador" for hierarchy "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv Line: 9
+Info (278001): Inferred 8 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador4|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador5|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador6|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador7|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador8|Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+Info (12130): Elaborated megafunction instantiation "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0" File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+Info (12133): Instantiated megafunction "vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0" with the following parameter: File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv Line: 9
+    Info (12134): Parameter "LPM_WIDTHA" = "8"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "16"
+    Info (12134): Parameter "LPM_WIDTHR" = "16"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_6at.tdf
-    Info (12023): Found entity 1: mult_6at File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/mult_6at.tdf Line: 28
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13014): Ignored 34 buffer(s)
-    Info (13016): Ignored 34 CARRY_SUM buffer(s)
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_17t.tdf
+    Info (12023): Found entity 1: mult_17t File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/db/mult_17t.tdf Line: 28
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/output_files/VectorizedCPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 641 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 39 input pins
-    Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 578 logic cells
-    Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Sun Oct 23 20:41:53 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:30
+Info (21057): Implemented 438 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 132 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 234 logic cells
+    Info (21062): Implemented 8 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Tue Oct 25 10:11:56 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+

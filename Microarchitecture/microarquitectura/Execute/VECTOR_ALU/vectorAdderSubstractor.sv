@@ -1,4 +1,4 @@
-module vectorAdderSubstractor #(parameter DATA_WIDTH = 19, parameter LANES = 6)( 
+module vectorAdderSubstractor #(parameter DATA_WIDTH = 8, parameter LANES = 8)( 
                  input [LANES-1:0][DATA_WIDTH-1:0] operand1,
                  input [LANES-1:0][DATA_WIDTH-1:0] operand2,
                  input operationMode,
@@ -23,6 +23,12 @@ module vectorAdderSubstractor #(parameter DATA_WIDTH = 19, parameter LANES = 6)(
 
     Adder_Substractor #(.WIDTH( DATA_WIDTH )) adderSubstractor6(
     operand1[5],operand2[5],out[5], operationMode,C[5],V[5]);
+	 
+	 Adder_Substractor #(.WIDTH( DATA_WIDTH )) adderSubstractor7(
+    operand1[6],operand2[6],out[6], operationMode,C[6],V[6]);
+	 
+	 Adder_Substractor #(.WIDTH( DATA_WIDTH )) adderSubstractor8(
+    operand1[7],operand2[7],out[7], operationMode,C[7],V[7]);
 
     assign N[0] = out[0][DATA_WIDTH-1];
     assign N[1] = out[1][DATA_WIDTH-1];
@@ -30,5 +36,8 @@ module vectorAdderSubstractor #(parameter DATA_WIDTH = 19, parameter LANES = 6)(
     assign N[3] = out[3][DATA_WIDTH-1];
     assign N[4] = out[4][DATA_WIDTH-1];
     assign N[5] = out[5][DATA_WIDTH-1];
+	 assign N[6] = out[6][DATA_WIDTH-1];
+	 assign N[7] = out[7][DATA_WIDTH-1];
+
 
 endmodule

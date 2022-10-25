@@ -23,8 +23,7 @@ module ALU #(parameter WIDTH = 18)(
 	logic [WIDTH-1:0] outDivider;
 	logic CDivider,VDivider;
 
-	Adder_Substractor #(.WIDTH( WIDTH )) Sumador(A,B,OutSumador,0,CSumador,VSumador);
-	Adder_Substractor #(.WIDTH( WIDTH )) Restador(A,B,OutResta,1,CResta,VResta);
+	Adder_Substractor #(.WIDTH( WIDTH )) Sumador(A,B,OutSumador,sel[0],CSumador,VSumador);
 	multiplicador #(.n( WIDTH )) Multiplicador ( A, B,outMultiplicador,CMultiplicador,VMultiplicador);
 	divisor #(.n( WIDTH )) Divisor(A, B, outDivider, CDivider,VDivider);
  													 
@@ -39,9 +38,9 @@ module ALU #(parameter WIDTH = 18)(
 				
 			end
 			3'b101 : begin
-				Out = OutResta;
-				C <= CResta;
-				V <= VResta;
+				Out = OutSumador;
+				C <= CSumador;
+				V <= VSumador;
 
 			end
 			3'b111 : begin

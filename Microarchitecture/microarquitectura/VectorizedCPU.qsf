@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE EP4CGX150DF31C7
-set_global_assignment -name TOP_LEVEL_ENTITY ALU
+set_global_assignment -name TOP_LEVEL_ENTITY ALUV
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:17:15  APRIL 15, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -56,7 +56,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testALU -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testAluV -section_id eda_simulation
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name EDA_TEST_BENCH_NAME testControlUnit -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testControlUnit
@@ -90,7 +90,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE Fetch/Fetch.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Fetch/adder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorAdder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/ALUV.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorMultiplier.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorDivider.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/Decode.sv
 set_global_assignment -name SYSTEMVERILOG_FILE CPU.sv
