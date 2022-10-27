@@ -36,6 +36,7 @@ def DicInstr(operand):
 def IntructionAnalyzer(instruction):
     divideInst = instruction.split(" ")                 #Divide the instruction into pieces
     operation = divideInst[0]                           #Take the instrucction operand 
+    FourZeros = "0000"
     #List to check for a three operand with a immediate
     OpRegsWithImm = ["MOV", "CMP", "VMOVI"]       
     #List to check the operations who works with memory 
@@ -54,7 +55,7 @@ def IntructionAnalyzer(instruction):
         operand1Bin = format(int(Operand1[1:]), '04b')  #Convert the register 1 into binary value 4bits
         Operand2 = divideInst[2]                        #Take the value of the immediate
         operand2Bin = format(int(Operand2), '019b')     #Convert the immediate into binary value 19bits
-        InstMachineCode = opcode + operand1Bin + operand2Bin #Merge the instrucction into machine format
+        InstMachineCode = opcode + operand1Bin + FourZeros + operand2Bin #Merge the instrucction into machine format
         return  InstMachineCode
         #print((InstMachineCode))
     
@@ -64,14 +65,14 @@ def IntructionAnalyzer(instruction):
         operand1Bin = format(int(Operand1[1:]), '04b')  #Convert the register 1 into binary value 4bits
         Operand2 = divideInst[2]                        #Take the second register
         operand2Bin = format(int(Operand2[1:]), '04b')  #Convert the immediate into binary value 4bits
-        InstMachineCode = opcode + operand1Bin + operand2Bin #Merge the instruction into machine format
+        InstMachineCode = opcode + operand1Bin + operand2Bin + FourZeros #Merge the instruction into machine format
         return  InstMachineCode
         #print((InstMachineCode))
         
     elif operation in opBrnJmp:
         opcode = DicInstr(operation)                    #Take the instrucction opcode according to match
         direction = divideInst[1].split("\n")[0]        #Catch the address to jump 
-        InstMachineCode = opcode
+        InstMachineCode = opcode + FourZeros + FourZeros
         return  InstMachineCode
         
     elif operation in opAritReg:
@@ -82,9 +83,10 @@ def IntructionAnalyzer(instruction):
         operand2Bin = format(int(Operand2[0][1:]), '04b')  #Convert the immediate into binary value 4bits
         Operand3 = divideInst[3].split(",")[0].split(",")  #Take the third register
         operand3Bin = format(int(Operand3[0][1:]), '04b')  #Convert the immediate into binary value 4bits
-        InstMachineCode = opcode +  operand1Bin +  operand2Bin + operand3Bin #Merge the instruction into machine format
+        InstMachineCode = opcode +  operand1Bin +  operand2Bin + operand3Bin + FourZeros #Merge the instruction into machine format
         return  InstMachineCode
         #print(InstMachineCode)
+        
     elif operation in opAritImm:
         opcode = DicInstr(operation)                    #Take the instrucction opcode according to match
         Operand1 = divideInst[1].split(",")[0]          #Take the first register
@@ -96,15 +98,17 @@ def IntructionAnalyzer(instruction):
         InstMachineCode = opcode +  operand1Bin +  operand2Bin + operand3Bin  #Merge the instruction into machine format
         return  InstMachineCode
         #print(InstMachineCode)
+        
     elif operation == "VMOV":
         opcode = DicInstr(operation)                    #Take the instrucction opcode according to match
         Operand1 = divideInst[1].split(",")[0]          #Take the first register
         operand1Bin = format(int(Operand1[1:]), '04b')  #Convert the register 1 into binary value 4bits
         Operand2 = divideInst[2].split(",")[0].split(",")  #Take the second register
         operand2Bin = format(int(Operand2[0][1:]), '04b')  #Convert the immediate into binary value 4bits
-        InstMachineCode = opcode +  operand1Bin +  operand2Bin + operand3Bin  #Merge the instruction into machine format
+        InstMachineCode = opcode +  operand1Bin +  operand2Bin + operand3Bin + FourZeros  #Merge the instruction into machine format
         return  InstMachineCode
         #print(InstMachineCode)
+        
     #PRINT Instruction
     elif operation == "PRINT":
         opcode = DicInstr(operation)                    #Take the instrucction opcode according to match
