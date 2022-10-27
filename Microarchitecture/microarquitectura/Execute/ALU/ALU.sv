@@ -1,7 +1,7 @@
-module ALU #(parameter WIDTH = 18)(  
+module ALU #(parameter WIDTH = 19)(  
     input [WIDTH-1:0] A,
 	 input [WIDTH-1:0] B,
-	 input [2:0] sel,
+	 input [3:0] sel,
     output logic [WIDTH-1:0] Out,
 	 output logic N,
 	 output logic Z,
@@ -31,25 +31,25 @@ module ALU #(parameter WIDTH = 18)(
 	always_comb begin  
 	
       case (sel)  
-			3'b100 : begin
+			4'b0100 : begin
 				Out = OutSumador;
 				C <= CSumador;
 				V <= VSumador;
 				
 			end
-			3'b101 : begin
+			4'b0101 : begin
 				Out = OutSumador;
 				C <= CSumador;
 				V <= VSumador;
 
 			end
-			3'b111 : begin
+			4'b0111 : begin
 				Out = outMultiplicador;
 				C <= CMultiplicador;
 				V <= VMultiplicador;
 
 			end
-			3'b110 : begin
+			4'b0110 : begin
 				Out = outDivider;
 				C <= CDivider;
 				V <= VDivider;

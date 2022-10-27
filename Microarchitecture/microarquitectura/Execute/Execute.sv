@@ -20,43 +20,43 @@
 	- VECTOR_SIZE: Cantidad de datos en los vectores
 */
 
-module Execute #(parameter DATA_WIDTH = 8,
+module Execute #(parameter DATA_WIDTH = 19, parameter WIDTH = 8,
 					 parameter VECTOR_SIZE = 8)
 	(input logic [DATA_WIDTH-1:0] scalarData1, scalarData2, scalarInmediate,
-	 input logic [VECTOR_SIZE-1:0][DATA_WIDTH-1:0] vectorOperand1, vectorOperand2,
-	 input [2:0] aluControl,
+	 input logic [VECTOR_SIZE-1:0][WIDTH-1:0] vectorOperand1, vectorOperand2,
+	 input [3:0] aluControl,
 	 input useInmediate,
 	 input useScalarAlu,
 	 input isScalarReg2,
-	 output logic [DATA_WIDTH*VECTOR_SIZE-1:0] out,
-	 output logic [DATA_WIDTH*VECTOR_SIZE-1:0] dataToWrite,
-	 output logic N, Z, V, C,
-	 output logic [VECTOR_SIZE-1:0] outVectorComparison
+	 output logic [WIDTH*VECTOR_SIZE-1:0] out,
+	 output logic [WIDTH*VECTOR_SIZE-1:0] dataToWrite,
+	 output logic N, Z, V, C
 	 );		
 	
-	logic [VECTOR_SIZE-1:0][DATA_WIDTH-1:0] vectorOut;
-	logic [DATA_WIDTH-1:0] scalarOut;
+	logic [VECTOR_SIZE-1:0][WIDTH-1:0] vectorOut, vectorData2Final;
+	logic [DATA_WIDTH-1:0] scalarOut,scalarData2Final;
 	
-	mux2  #(DATA_WIDTH) inmediateMux(scalarData2, 
+	
+	mux2  #(.WIDTH(DATA_WIDTH)) inmediateMux(scalarData2, 
 				scalarInmediate, useInmediate, scalarData2Final);
 	
 	
-	mux2 #(DATA_WIDTH*VECTOR_SIZE) vectorData2ScalarMux(.d0(vectorOperand2
+	mux2 #(WIDTH*VECTOR_SIZE) vectorData2ScalarMux(.d0(vectorOperand2
 ), 
-	.d1({scalarData2Final,scalarData2Final, scalarData2Final, scalarData2Final, scalarData2Final, scalarData2Final, scalarData2Final, scalarData2Final}), 
+	.d1({scalarData2Final[7:0],scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0],
+	scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0]}), 
 	.s(isScalarReg2), 
 	.y(vectorData2Final));		
 	
-	ALUV #(.DATA_WIDTH(DATA_WIDTH), 
+	ALUV #(.DATA_WIDTH(WIDTH), 
 			 .LANES(VECTOR_SIZE)) ALUV
 			( 
 				 .selector(aluControl),
 				 .operand1(vectorOperand1),
 				 .operand2(vectorData2Final),
-				 .out(vectorOut),
-				 .outComparison(outVectorComparison));
+				 .out(vectorOut));
 			
-	ALU #(DATA_WIDTH) ALU( 
+	ALU #(.WIDTH(DATA_WIDTH)) ALU( 
 		 .A(scalarData1),
 		 .B(scalarData2Final),
 		 .sel(aluControl),
@@ -65,12 +65,14 @@ module Execute #(parameter DATA_WIDTH = 8,
 		 .Z(Z),
 		 .V(V),
 		 .C(C) );
-	
-	mux2 #(DATA_WIDTH*VECTOR_SIZE) executeOutputMux(
-	.d0({vectorOut[7], vectorOut[6], vectorOut[5], vectorOut[4], vectorOut[3], vectorOut[2], vectorOut[1], vectorOut[0]}), 
-	.d1({{DATA_WIDTH*(VECTOR_SIZE-1){1'b0}}, scalarOut}), 
+		 
+		
+	mux2 #(WIDTH*VECTOR_SIZE) executeOutputMux(
+	.d0(vectorOut), 
+	.d1({{DATA_WIDTH*(VECTOR_SIZE-1){1'b0}}, scalarOut}),  
 	.s(useScalarAlu), .y(out));		
-	assign dataToWrite = {vectorOperand2[7],vectorOperand2[6],vectorOperand2[5], vectorOperand2[4], vectorOperand2[3], vectorOperand2[2],vectorOperand2[1], vectorOperand2[0]}; 
+	assign dataToWrite = {vectorOut[7],vectorOut[6],vectorOut[5], vectorOut[4], vectorOut[3], vectorOut[2],vectorOut[1], vectorOut
+	[0]}; 
 endmodule
 
 

@@ -22,12 +22,12 @@ module testALU();
 	initial begin
 		$display ("=============ALU SUM=============");
 		
-		sel = 3'b000;
+		sel = 3'b100;
 		
 		
-		A = 48'b1;
-		B = 48'b1;
-		OutExpected=48'b10;
+		A = 18'b1;
+		B = 18'b1;
+		OutExpected=18'b10;
 		ZExpected=0;
 		VExpected=0;
 		NExpected=0;
@@ -39,14 +39,14 @@ module testALU();
 			$display ($sformatf("============= TEST 1 SUCCESS A = %b, B = %b =============", A, B));
 		else $error($sformatf("=!=!=!=!=!=!== TEST 1 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
-		
-		A = 48'b1111;
-		B = 48'b1110;
-		OutExpected = 48'b11101;
+		sel = 3'b101;
+		A = 18'b111;
+		B = 18'b110;
+		OutExpected = 18'b1;
 		ZExpected=0;
 		VExpected=0;
 		NExpected=0;
-		CExpected=0;
+		CExpected=1;
 		
 		#10
 		
@@ -54,10 +54,10 @@ module testALU();
 			$display ($sformatf("============= TEST 2 SUCCESS A = %b, B = %b =============", A, B));
 		else $error($sformatf("=!=!=!=!=!=!== TEST 2 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
-		
-		A = 48'b0000;
-		B = 48'b1110;
-		OutExpected = 48'b1110;
+		sel = 3'b111;
+		A = 18'b0011;
+		B = 18'b10;
+		OutExpected = 18'b110;
 		ZExpected=0;
 		VExpected=0;
 		NExpected=0;
@@ -69,10 +69,10 @@ module testALU();
 			$display ($sformatf("============= TEST 3 SUCCESS A = %b, B = %b =============", A, B));
 		else $error($sformatf("=!=!=!=!=!=!== TEST 3 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
-		
-		A = 48'b1111;
-		B = 48'b1111;
-		OutExpected = 48'b11110;
+		sel = 3'b110;
+		A = 18'b100;
+		B = 18'b10;
+		OutExpected = 18'b10;
 		ZExpected=0;
 		VExpected=0;
 		NExpected=0;

@@ -24,7 +24,8 @@
 	- WIDTH: width of the data
 	- ADRESSWIDTH: size of the addresses in regfile
 */
-module Decode #(parameter DATA_WIDTH = 18, //Immediate
+module Decode #(parameter DATA_WIDTH = 19, //Immediate
+						parameter WIDTH = 8,
 					parameter VECTOR_SIZE = 8,
 					parameter SCALAR_REGNUM = 16, parameter VECTOR_REGNUM = 16, 
 					parameter ADDRESS_WIDTH = 4, parameter OPCODE_WIDTH = 5, 
@@ -32,19 +33,19 @@ module Decode #(parameter DATA_WIDTH = 18, //Immediate
 	(input logic clock, reset, writeEnableScalar, writeEnableVector,
 	 input logic [ADDRESS_WIDTH-1:0] writeAddress,
 	 input logic [DATA_WIDTH-1:0] writeScalarData,
-	 input logic [VECTOR_SIZE-1:0][DATA_WIDTH-1:0] writeVectorData,
+	 input logic [VECTOR_SIZE-1:0][WIDTH-1:0] writeVectorData,
 	 input logic [INSTRUCTION_WIDTH-1:0] instruction,
 	 output logic [DATA_WIDTH-1:0] reg1ScalarContent, reg2ScalarContent, inmediate,
-	 output logic [VECTOR_SIZE-1:0][DATA_WIDTH-1:0] reg1VectorContent, reg2VectorContent,
+	 output logic [VECTOR_SIZE-1:0][WIDTH-1:0] reg1VectorContent, reg2VectorContent,
 	 output logic [ADDRESS_WIDTH-1:0] regDestinationAddress, reg1Address, reg2Address,
 	 output logic [OPCODE_WIDTH-1:0] opcode
 	 );
 			
-	assign reg1Address = instruction[21:19];
-	assign reg2Address = instruction[18:16];
-	assign regDestinationAddress = instruction[24:22];
+	assign reg1Address = instruction[22:19];
+	assign reg2Address = instruction[17:14];
+	assign regDestinationAddress = instruction[26:23];
 	assign inmediate[18:0] = instruction[18:0];
-	assign opcode = instruction[29:25];
+	assign opcode = instruction[31:27];
 
 
 	scalarRegFile #(.DATA_WIDTH(DATA_WIDTH), 

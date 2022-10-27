@@ -1,0 +1,20 @@
+Fitter Status : Failed - Tue Oct 25 13:30:37 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : VectorizedCPU
+Top-level Entity Name : Decode
+Family : Cyclone IV GX
+Device : EP4CGX150DF31C7
+Timing Models : Final
+Total logic elements : 2,941 / 149,760 ( 2 % )
+    Total combinational functions : 1,645 / 149,760 ( 1 % )
+    Dedicated logic registers : 1,296 / 149,760 ( < 1 % )
+Total registers : 1296
+Total pins : 561 / 508 ( 110 % )
+Total virtual pins : 0
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

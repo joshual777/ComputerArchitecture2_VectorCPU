@@ -76,6 +76,10 @@ module CPU #(parameter DATA_WIDTH = 19,
 	// ---------------------------------//
 	// Control Unit
 	
+	logic resetMaskVectorDD;
+	logic writeToMaskVectorED, writeToMaskVectorEE, writeToMaskVectorDD;
+	logic [VECTOR_SIZE-1:0] maskVectorInD;
+	logic [VECTOR_SIZE-1:0] maskVectorOutD, maskVectorOutE;
 	logic [VECTOR_SIZE-1:0] outVectorComparisonE;
 	
 	controlUnit #(.OPCODE_WIDTH(OPCODE_WIDTH)) controlUnit
@@ -94,7 +98,9 @@ module CPU #(parameter DATA_WIDTH = 19,
 		.resetMaskVectorDD(resetMaskVectorDD),
 		.writeToMaskVectorED(writeToMaskVectorED)
 		);
-		
+	
+	// Insertar control unit aqui. Hay un ejemplo en proyecto viejo alfaro juancho
+	
 	
 	
 	// ---------------------------------//
@@ -108,6 +114,45 @@ module CPU #(parameter DATA_WIDTH = 19,
 
 	// -----------------//
 		
+
+	//Hazards Unit 
+
+
+	hazardsUnit #(.ADDRESSWIDTH(REG_ADDRESS_WIDTH)) hazardUnit
+	(.writeEnableScalarWBWB(writeEnableScalarWBWB), 
+	 .writeEnableScalarWBM(writeEnableScalarWBM), 
+	 .writeEnableVectorWBWB(writeEnableVectorWBWB), 
+	 .writeEnableVectorWBM(writeEnableVectorWBM),
+	 .isScalarOutputED(isScalarOutputED),
+	 .isScalarReg1ED(isScalarReg1ED), 
+	 .isScalarReg2ED(isScalarReg2ED),
+	 .isScalarOutputEM(isScalarOutputEM), 
+	 .isScalarReg1EM(isScalarReg1EM), 
+	 .isScalarReg2EM(isScalarReg2EM),
+	 .isScalarOutputEE(isScalarOutputEE), 
+	 .isScalarReg1EE(isScalarReg1EE), 
+	 .isScalarReg2EE(isScalarReg2EE),
+	 .isScalarOutputEWB(isScalarOutputEWB), 
+	 .isScalarReg1EWB(isScalarReg1EWB), 
+	 .isScalarReg2EWB(isScalarReg2EWB),
+	 .resultSelectorWBE(resultSelectorWBE), 
+	 .takeBranchE(takeBranchE),
+	 .writeAddressM(regDestinationAddressWBM), 
+	 .writeAddressWB(regDestinationAddressWBWB), 
+	 .writeAddressE(regDestinationAddressWBE),
+	 .reg1ReadAddressE(reg1AddressE), 
+	 .reg2ReadAddressE(reg2AddressE), 
+	 .reg1ReadAddressD(reg1AddressD), 
+	 .reg2ReadAddressD(reg2AddressD),
+	 .data1ScalarForwardSelectorE(data1ScalarForwardSelectorE), 
+	 .data2ScalarForwardSelectorE(data2ScalarForwardSelectorE),
+	 .data1VectorForwardSelectorE(data1VectorForwardSelectorE), 
+	 .data2VectorForwardSelectorE(data2VectorForwardSelectorE),
+	 .stallF(stallF), 
+	 .stallD(stallD), 
+	 .flushE(flushE), 
+	 .flushD(flushD));
+	
 	
 	//-------------------------------------------------------------------------------//
 	// Fetch
@@ -149,6 +194,10 @@ module CPU #(parameter DATA_WIDTH = 19,
 	 .reg1Address(reg1AddressD), 
 	 .reg2Address(reg2AddressD),
 	 .opcode(opcodeD),
+	 .weMaskVector(writeToMaskVectorDD),
+	 .resetMaskVector(resetMaskVectorDD),
+	 .maskVectorIn(maskVectorInD),
+	 .maskVectorOut(maskVectorOutD)
 	 );
 	 
 	 
@@ -200,6 +249,7 @@ module CPU #(parameter DATA_WIDTH = 19,
 	 .Z(Z1), 
 	 .V(V1), 
 	 .C(C1),
+	 .vectorMask(maskVectorOutE),
 	 .outVectorComparison(outVectorComparisonE)
 	 );	
 		
