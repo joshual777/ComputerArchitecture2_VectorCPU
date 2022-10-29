@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Tue Oct 25 10:11:56 2022
+Analysis & Synthesis Status : Successful - Sat Oct 29 00:06:52 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : VectorizedCPU
-Top-level Entity Name : ALUV
+Top-level Entity Name : CPU
 Family : Cyclone IV GX
-Total logic elements : 234
-    Total combinational functions : 234
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 196
+Total logic elements : 1,491
+    Total combinational functions : 1,188
+    Dedicated logic registers : 552
+Total registers : 552
+Total pins : 67
 Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 8
+Total memory bits : 65,536
+Embedded Multiplier 9-bit elements : 6
 Total GXB Receiver Channel PCS : 0
 Total GXB Receiver Channel PMA : 0
 Total GXB Transmitter Channel PCS : 0

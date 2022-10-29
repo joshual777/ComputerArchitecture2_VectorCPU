@@ -6,8 +6,9 @@ module condunit #(parameter OPCODEWIDTH = 5)
 		
 	always_comb
 		case(opcodeE)
-			5'b01011: takeBranchE = Z; // EQ
-			5'b01110: takeBranchE = 1'b1; // JUMP
+			5'b01111: takeBranchE = Z; // EQ
+			5'b01110: takeBranchE = N==V; // GEQ
+			5'b10000: takeBranchE = 1'b1; // JUMP
 			default: takeBranchE = 1'b0; // 0
 		endcase
 	

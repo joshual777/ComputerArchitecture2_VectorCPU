@@ -10,6 +10,8 @@ module testControlUnit();
 	logic useInmediateED;
 	logic [2:0] aluControlED;
 	logic outFlagMD;
+	logic resetMaskVectorDD;
+	logic writeToMaskVectorED;
 	
 	logic expected_useScalarAluED, expected_isScalarOutputED, expected_isScalarReg1ED, expected_isScalarReg2ED;
 	logic expected_resultSelectorWBD;
@@ -19,6 +21,8 @@ module testControlUnit();
 	logic expected_useInmediateED;
 	logic [2:0] expected_aluControlED;
 	logic expected_outFlagMD;
+	logic expected_resetMaskVectorDD;
+	logic expected_writeToMaskVectorED;
 	
 	controlUnit #(.OPCODE_WIDTH(OPCODE_WIDTH)) controlUnit
 	(	.opcodeD(opcodeD),
@@ -32,7 +36,9 @@ module testControlUnit();
 	   .writeToMemoryEnableMD(writeToMemoryEnableMD),
 	   .useInmediateED(useInmediateED),
 	   .aluControlED(aluControlED),
-	   .outFlagMD(outFlagMD)
+	   .outFlagMD(outFlagMD),
+		.resetMaskVectorDD(resetMaskVectorDD),
+		.writeToMaskVectorED(writeToMaskVectorED)
 		);
 		
 	initial begin
@@ -53,13 +59,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b0;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0; 
 		
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 0 SUCCESS=============");
 			end
@@ -79,13 +87,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b110;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 		
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 1 SUCCESS=============");
 			end
@@ -105,13 +115,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b110;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 		
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 2 SUCCESS=============");
 			end
@@ -132,13 +144,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b110;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 	
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD )
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 3 SUCCESS=============");
 			end
@@ -158,13 +172,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b000;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 	
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 4 SUCCESS=============");
 			end
@@ -184,13 +200,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b001;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 	
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 5 SUCCESS=============");
 			end
@@ -210,13 +228,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b010;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 	
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 6 SUCCESS=============");
 			end
@@ -236,13 +256,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 	
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 7 SUCCESS=============");
 			end
@@ -263,13 +285,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b1;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 8 SUCCESS=============");
 			end
@@ -290,13 +314,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b110;
 		expected_outFlagMD = 1'b1;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 9 SUCCESS=============");
 			end
@@ -317,13 +343,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b000;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 10 SUCCESS=============");
 			end
@@ -343,13 +371,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b001;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 11 SUCCESS=============");
 			end
@@ -369,13 +399,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b1;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 12 SUCCESS=============");
 			end
@@ -395,13 +427,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b001;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD )
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 13 SUCCESS=============");
 			end
@@ -421,13 +455,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b1;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 14 SUCCESS=============");
 			end
@@ -447,13 +483,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b1;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 15 SUCCESS=============");
 			end
@@ -473,13 +511,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b1;
 		expected_aluControlED = 3'b111;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b0;
 
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 16 SUCCESS=============");
 			end
@@ -499,13 +539,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b011;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b0;
+		expected_writeToMaskVectorED = 1'b1;
 		
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 17 SUCCESS=============");
 			end
@@ -525,13 +567,15 @@ module testControlUnit();
 		expected_useInmediateED = 1'b0;
 		expected_aluControlED = 3'b0;
 		expected_outFlagMD = 1'b0;
+		expected_resetMaskVectorDD = 1'b1;
+		expected_writeToMaskVectorED = 1'b0;
 		
 		#10
 		
 		assert (useScalarAluED == expected_useScalarAluED && isScalarOutputED == expected_isScalarOutputED && isScalarReg1ED == expected_isScalarReg1ED &&
 				  isScalarReg2ED == expected_isScalarReg2ED && resultSelectorWBD == expected_resultSelectorWBD && writeEnableScalarWBD == expected_writeEnableScalarWBD &&
 				  writeEnableVectorWBD == expected_writeEnableVectorWBD && writeToMemoryEnableMD == expected_writeToMemoryEnableMD && useInmediateED == expected_useInmediateED && 
-				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD)
+				  aluControlED == expected_aluControlED && outFlagMD == expected_outFlagMD && resetMaskVectorDD == expected_resetMaskVectorDD && writeToMaskVectorED == expected_writeToMaskVectorED)
 			begin
 				$display ("=============TEST 18 SUCCESS=============");
 			end

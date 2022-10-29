@@ -30,7 +30,13 @@ module ALU #(parameter WIDTH = 19)(
 
 	always_comb begin  
 	
-      case (sel)  
+      case (sel)
+			4'b0010 : begin
+				Out = B;
+				C <= 0;
+				V <= 0;
+
+			end
 			4'b0100 : begin
 				Out = OutSumador;
 				C <= CSumador;
@@ -55,6 +61,13 @@ module ALU #(parameter WIDTH = 19)(
 				V <= VDivider;
 
 			end
+			4'b1111 : begin
+				Out = A;
+				C <= 0;
+				V <= 0;
+
+			end
+			
 			default : begin
 				Out = A;
 				C <= 0;

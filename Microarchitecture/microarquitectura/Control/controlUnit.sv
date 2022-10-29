@@ -13,67 +13,141 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
 					
 	always@(opcodeD) begin 
 		
-		case(opcodeD)
-		5'b0:begin
-         useScalarAluED = 1'b0;
-         isScalarOutputED = 1'b0;
+		case(opcodeD) //MOV
+		5'b10:begin
+         useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b1;
          isScalarReg1ED = 1'b0;
          isScalarReg2ED = 1'b0;
          resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
+         writeEnableScalarWBD = 1'b1;
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b0;
+         useInmediateED = 1'b1;
+         aluControlED = 4'b10;
          outFlagMD = 1'b0;
 
      end
-
-     5'b1:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b1;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b110;
-         outFlagMD = 1'b0;
-     end
-
-     5'b10:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b1;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b1;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b110;
-         outFlagMD = 1'b0;
-     end
-
-     5'b11:begin
-         useScalarAluED = 1'b1;
+	  5'b100:begin //ADD
+			useScalarAluED = 1'b1;
          isScalarOutputED = 1'b1;
          isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b1;
+         isScalarReg2ED = 1'b1;
+         resultSelectorWBD = 1'b0;
          writeEnableScalarWBD = 1'b1;
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b0;
-         aluControlED = 3'b110;
+         aluControlED = 4'b100;
          outFlagMD = 1'b0;
 
-     end
+			
+	  end
+	   5'b101:begin //SUB
+			useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b1;
+         isScalarReg1ED = 1'b1;
+         isScalarReg2ED = 1'b1;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b1;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b0;
+         aluControlED = 4'b101;
+         outFlagMD = 1'b0;
 
-     5'b100:begin
-         useScalarAluED = 1'b0;
+			
+	  end
+		5'b110:begin //DIV
+			useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b1;
+         isScalarReg1ED = 1'b1;
+         isScalarReg2ED = 1'b0;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b1;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b1;
+         aluControlED = 4'b110;
+         outFlagMD = 1'b0;
+			
+	  end
+	  5'b111:begin //MUL
+			useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b1;
+         isScalarReg1ED = 1'b1;
+         isScalarReg2ED = 1'b0;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b1;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b0;
+         aluControlED = 4'b111;
+         outFlagMD = 1'b0;
+			
+	  end
+	  5'b01110:begin //JUMP
+			useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b0;
+         isScalarReg1ED = 1'b0;
+         isScalarReg2ED = 1'b0;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b0;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b1;
+         aluControlED = 4'b10;
+         outFlagMD = 1'b0;
+
+	  end
+	  5'b1011:begin //BE
+		useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b0;
+         isScalarReg1ED = 1'b0;
+         isScalarReg2ED = 1'b0;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b0;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b1;
+         aluControlED = 4'b10;
+         outFlagMD = 1'b0;
+			
+	  end
+	  
+	  5'b1010:begin //CMP
+		   useScalarAluED = 1'b1;
+         isScalarOutputED = 1'b1;
+         isScalarReg1ED = 1'b1;
+         isScalarReg2ED = 1'b0;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b0;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b1;
+         aluControlED = 3'b0101;
+         outFlagMD = 1'b0;
+
+			
+	  end
+	  
+	  5'b10100:begin //VSADD
+			useScalarAluED = 1'b0;
+         isScalarOutputED = 1'b0;
+         isScalarReg1ED = 1'b0;
+         isScalarReg2ED = 1'b1;
+         resultSelectorWBD = 1'b0;
+         writeEnableScalarWBD = 1'b0;
+         writeEnableVectorWBD = 1'b1;
+         writeToMemoryEnableMD = 1'b0;
+         useInmediateED = 1'b0;
+			aluControlED = 4'b0100;
+         outFlagMD = 1'b0;
+
+	  end
+	  
+	  5'b11100:begin //VADD
+			useScalarAluED = 1'b0;
          isScalarOutputED = 1'b0;
          isScalarReg1ED = 1'b0;
          isScalarReg2ED = 1'b0;
@@ -82,26 +156,30 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableVectorWBD = 1'b1;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b0;
-         aluControlED = 3'b000;
+			aluControlED = 4'b0100;
          outFlagMD = 1'b0;
-     end
 
-     5'b101:begin
-         useScalarAluED = 1'b0;
+			
+	  end
+	  
+	  5'b11101:begin //VSSUB
+		  useScalarAluED = 1'b0;
          isScalarOutputED = 1'b0;
          isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
+         isScalarReg2ED = 1'b1;
          resultSelectorWBD = 1'b0;
          writeEnableScalarWBD = 1'b0;
          writeEnableVectorWBD = 1'b1;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b0;
-         aluControlED = 3'b001;
+			aluControlED = 4'b1101;
          outFlagMD = 1'b0;
-     end
-
-     5'b110:begin
-         useScalarAluED = 1'b0;
+			
+	  end
+	  
+	  5'b1011:begin //VSMUL
+	  
+			useScalarAluED = 1'b0;
          isScalarOutputED = 1'b0;
          isScalarReg1ED = 1'b0;
          isScalarReg2ED = 1'b1;
@@ -112,176 +190,40 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          useInmediateED = 1'b0;
          aluControlED = 3'b010;
          outFlagMD = 1'b0;
-     end
 
-     5'b111:begin
-         useScalarAluED = 1'b0;
+			
+	  end
+	  5'b10001:begin //VSTR
+		useScalarAluED = 1'b1;
          isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
+         isScalarReg1ED = 1'b1;
          isScalarReg2ED = 1'b0;
          resultSelectorWBD = 1'b0;
          writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b1;
-         writeToMemoryEnableMD = 1'b0;
+         writeEnableVectorWBD = 1'b0;
+         writeToMemoryEnableMD = 1'b1;
          useInmediateED = 1'b0;
-         aluControlED = 3'b111;
+         aluControlED = 4'b1111;
          outFlagMD = 1'b0;
-     end
 
-     5'b1000:begin
-         useScalarAluED = 1'b0;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b1;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b1;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
-         aluControlED = 3'b111;
-         outFlagMD = 1'b0;
-     end
-
-     5'b1001:begin
-         useScalarAluED = 1'b1;
+			
+	  end
+	  5'b10000:begin //VLDR
+			 useScalarAluED = 1'b1;
          isScalarOutputED = 1'b0;
          isScalarReg1ED = 1'b1;
          isScalarReg2ED = 1'b0;
          resultSelectorWBD = 1'b1;
          writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
+         writeEnableVectorWBD = 1'b1;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b0;
-         aluControlED = 3'b110;
-         outFlagMD = 1'b1;
-     end
-
-     5'b1010:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b1;
-         isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b1;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b1;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b000;
-         outFlagMD = 1'b0;
-     end
-
-     5'b1011:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b1;
-         isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b1;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b1;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b001;
-         outFlagMD = 1'b0;
-     end
-
-     5'b1100:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b1;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b1;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
-         aluControlED = 3'b111;
-         outFlagMD = 1'b0;
-     end
-
-     5'b1101:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b1;
-         isScalarReg1ED = 1'b1;
-         isScalarReg2ED = 1'b1;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b001;
-         outFlagMD = 1'b0;
-     end
-
-     5'b1110:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
-         aluControlED = 3'b111;
+         aluControlED = 4'b1111;
          outFlagMD = 1'b0;
 
-     end
-
-     5'b1111:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
-         aluControlED = 3'b111;
-         outFlagMD = 1'b0;
-     end
-
-     5'b10000:begin
-         useScalarAluED = 1'b1;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
-         aluControlED = 3'b111;
-         outFlagMD = 1'b0;
-     end
-
-     5'b10001:begin
-         useScalarAluED = 1'b0;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b011;
-         outFlagMD = 1'b0;
-     end
-
-     5'b10010:begin
-         useScalarAluED = 1'b0;
-         isScalarOutputED = 1'b0;
-         isScalarReg1ED = 1'b0;
-         isScalarReg2ED = 1'b0;
-         resultSelectorWBD = 1'b0;
-         writeEnableScalarWBD = 1'b0;
-         writeEnableVectorWBD = 1'b0;
-         writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b0;
-         aluControlED = 3'b0;
-         outFlagMD = 1'b0;
-     end
+			
+	  end
+  
 			default: begin 
 				useScalarAluED = 1'b0; 
 				isScalarOutputED = 1'b0;  

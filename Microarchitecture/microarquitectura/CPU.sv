@@ -12,8 +12,8 @@
 
 module CPU #(parameter DATA_WIDTH = 19, 
 					parameter DATA_INTEGER_WIDTH = 8,
-					parameter INSTRUCTION_WIDTH = 30,
-					parameter VECTOR_SIZE = 6, parameter PC_WIDTH = 32,
+					parameter INSTRUCTION_WIDTH = 32,
+					parameter VECTOR_SIZE = 8, parameter PC_WIDTH = 32,
 					parameter SCALAR_REGNUM = 8, parameter VECTOR_REGNUM = 8, 
 					parameter REG_ADDRESS_WIDTH = 3, parameter OPCODE_WIDTH = 5,
 					parameter OUTPUT_WIDTH = 8)
@@ -91,8 +91,6 @@ module CPU #(parameter DATA_WIDTH = 19,
 	   .useInmediateED(useInmediateED),
 	   .aluControlED(aluControlED),
 	   .outFlagMD(outFlagMD),
-		.resetMaskVectorDD(resetMaskVectorDD),
-		.writeToMaskVectorED(writeToMaskVectorED)
 		);
 		
 	
@@ -162,16 +160,14 @@ module CPU #(parameter DATA_WIDTH = 19,
 		 opcodeD,
 		 resultSelectorWBD, writeEnableScalarWBD, writeEnableVectorWBD, aluControlED, writeToMemoryEnableMD,
 		 useInmediateED, outFlagMD, isScalarOutputED, isScalarReg1ED, isScalarReg2ED, useScalarAluED,
-		 N1, Z1, V1, C1, writeToMaskVectorED,
-		 maskVectorOutD}), 
+		 N1, Z1, V1, C1}), 
 	 .out({reg1ScalarContentE, reg2ScalarContentE, inmediateE,
 			 reg1VectorContentE, reg2VectorContentE,
 			 regDestinationAddressWBE, reg1AddressE, reg2AddressE,
 			 opcodeE,
 			 resultSelectorWBE, writeEnableScalarWBE, writeEnableVectorWBE, aluControlEE, writeToMemoryEnableME,
 			 useInmediateEE, outFlagME, isScalarOutputEE, isScalarReg1EE, isScalarReg2EE, useScalarAluEE,
-			 N2, Z2, V2, C2, writeToMaskVectorEE,
-			 maskVectorOutE}));
+			 N2, Z2, V2, C2}));
 	 
 	//-------------------------------------------------------------------------------//
 
@@ -186,25 +182,16 @@ module CPU #(parameter DATA_WIDTH = 19,
 	 .vectorOperand2(reg2VectorContentE),
 	 .aluControl(aluControlEE),
 	 .useInmediate(useInmediateEE),
-	 .forwardWB(forwardWB), 
-	 .forwardM(forwardM),
 	 .useScalarAlu(useScalarAluEE),
 	 .isScalarReg2(isScalarReg2EE),
-	 .data1ScalarForwardSelector(data1ScalarForwardSelectorE),
-	 .data2ScalarForwardSelector(data2ScalarForwardSelectorE),
-	 .data1VectorForwardSelector(data1VectorForwardSelectorE),
-	 .data2VectorForwardSelector(data2VectorForwardSelectorE),
 	 .out(executeOuputE),
 	 .dataToWrite(dataToWriteE),
 	 .N(N1), 
 	 .Z(Z1), 
 	 .V(V1), 
-	 .C(C1),
-	 .outVectorComparison(outVectorComparisonE)
+	 .C(C1)
 	 );	
 		
-	 assign writeToMaskVectorDD = writeToMaskVectorEE;
-	 assign maskVectorInD = outVectorComparisonE;
 	 assign NewPCF = executeOuputE[PC_WIDTH-1:0];
 
 	 // Execution - Memory Flip-Flop
@@ -258,7 +245,7 @@ module CPU #(parameter DATA_WIDTH = 19,
 	assign writeEnableVectorD = writeEnableVectorWBWB;
 	assign writeEnableScalarD = writeEnableScalarWBWB;
 	assign forwardWB = outputWB;	 
-	assign out = {memoryOutputWB[112:105], memoryOutputWB[93:86], memoryOutputWB[74:67], memoryOutputWB[55:48], memoryOutputWB[36:29], memoryOutputWB[17:10]};
+	assign out = {memoryOutputWB[63:56],memoryOutputWB[55:48],memoryOutputWB[47:40], memoryOutputWB[39:32], memoryOutputWB[31:24], memoryOutputWB[23:16], memoryOutputWB[15:8], memoryOutputWB[7:0]};
 	assign outFlag = outputFlagMWB; 
 	 
 	 

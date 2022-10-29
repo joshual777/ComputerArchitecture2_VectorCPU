@@ -1,5 +1,5 @@
 Flow report for VectorizedCPU
-Tue Oct 25 10:11:56 2022
+Sat Oct 29 00:06:52 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,21 +40,21 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 25 10:11:56 2022       ;
+; Flow Status                        ; Successful - Sat Oct 29 00:06:52 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; VectorizedCPU                               ;
-; Top-level Entity Name              ; ALUV                                        ;
+; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV GX                               ;
 ; Device                             ; EP4CGX150DF31C7                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 234                                         ;
-;     Total combinational functions  ; 234                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 196                                         ;
+; Total logic elements               ; 1,491                                       ;
+;     Total combinational functions  ; 1,188                                       ;
+;     Dedicated logic registers      ; 552                                         ;
+; Total registers                    ; 552                                         ;
+; Total pins                         ; 67                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 8                                           ;
+; Total memory bits                  ; 65,536                                      ;
+; Embedded Multiplier 9-bit elements ; 6                                           ;
 ; Total GXB Receiver Channel PCS     ; 0                                           ;
 ; Total GXB Receiver Channel PMA     ; 0                                           ;
 ; Total GXB Transmitter Channel PCS  ; 0                                           ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/25/2022 10:11:44 ;
+; Start date & time ; 10/29/2022 00:06:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VectorizedCPU       ;
 +-------------------+---------------------+
@@ -79,32 +79,41 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 10995770589201.166671430362968         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 10995770589201.166702358943252         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testCondUnit                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testALU                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testControlUnit                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testExecute                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testCPU                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testAluV                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testMemory                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testDecode                        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testFecth                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testAluV                               ; --            ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testMemory                             ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testCondUnit.sv                  ; --            ; --          ; testCondUnit                      ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testALU.sv                       ; --            ; --          ; testALU                           ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testControlUnit.sv               ; --            ; --          ; testControlUnit                   ;
+; EDA_TEST_BENCH_FILE                  ; Tests/testExecute.sv                   ; --            ; --          ; testExecute                       ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testCPU.sv                       ; --            ; --          ; testCPU                           ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testAluV.sv                      ; --            ; --          ; testAluV                          ;
+; EDA_TEST_BENCH_FILE                  ; Tests/testMemory.sv                    ; --            ; --          ; testMemory                        ;
+; EDA_TEST_BENCH_FILE                  ; Tests/testDecode.sv                    ; --            ; --          ; testDecode                        ;
 ; EDA_TEST_BENCH_FILE                  ; Tests/testFecth.sv                     ; --            ; --          ; testFecth                         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testCondUnit                           ; --            ; --          ; testCondUnit                      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testALU                                ; --            ; --          ; testALU                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testControlUnit                        ; --            ; --          ; testControlUnit                   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testExecute                            ; --            ; --          ; testExecute                       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testCPU                                ; --            ; --          ; testCPU                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testAluV                               ; --            ; --          ; testAluV                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testMemory                             ; --            ; --          ; testMemory                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testDecode                             ; --            ; --          ; testDecode                        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testFecth                              ; --            ; --          ; testFecth                         ;
 ; EDA_TEST_BENCH_NAME                  ; testControlUnit                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; testCondUnit                           ; --            ; --          ; eda_simulation                    ;
@@ -112,17 +121,20 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; testALU                                ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; testAluV                               ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; testFecth                              ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; testDecode                             ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; testExecute                            ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; testMemory                             ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
 ; NUM_PARALLEL_PROCESSORS              ; All                                    ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; ALUV        ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; ALUV        ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; ALUV        ; Top                               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; CPU         ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; ALUV                                   ; VectorizedCPU ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; CPU                                    ; VectorizedCPU ; --          ; --                                ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -131,8 +143,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4858 MB             ; 00:00:27                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4940 MB             ; 00:00:30                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
