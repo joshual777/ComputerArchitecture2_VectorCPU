@@ -1,869 +1,321 @@
-|ALU
-A[0] => A[0].IN4
-A[1] => A[1].IN4
-A[2] => A[2].IN4
-A[3] => A[3].IN4
-A[4] => A[4].IN4
-A[5] => A[5].IN4
-A[6] => A[6].IN4
-A[7] => A[7].IN4
-A[8] => A[8].IN4
-A[9] => A[9].IN4
-A[10] => A[10].IN4
-A[11] => A[11].IN4
-A[12] => A[12].IN4
-A[13] => A[13].IN4
-A[14] => A[14].IN4
-A[15] => A[15].IN4
-A[16] => A[16].IN4
-A[17] => A[17].IN4
-B[0] => B[0].IN4
-B[1] => B[1].IN4
-B[2] => B[2].IN4
-B[3] => B[3].IN4
-B[4] => B[4].IN4
-B[5] => B[5].IN4
-B[6] => B[6].IN4
-B[7] => B[7].IN4
-B[8] => B[8].IN4
-B[9] => B[9].IN4
-B[10] => B[10].IN4
-B[11] => B[11].IN4
-B[12] => B[12].IN4
-B[13] => B[13].IN4
-B[14] => B[14].IN4
-B[15] => B[15].IN4
-B[16] => B[16].IN4
-B[17] => B[17].IN4
-sel[0] => Mux0.IN6
-sel[0] => Mux1.IN6
-sel[0] => Mux2.IN6
-sel[0] => Mux3.IN6
-sel[0] => Mux4.IN6
-sel[0] => Mux5.IN6
-sel[0] => Mux6.IN6
-sel[0] => Mux7.IN6
-sel[0] => Mux8.IN6
-sel[0] => Mux9.IN6
-sel[0] => Mux10.IN6
-sel[0] => Mux11.IN6
-sel[0] => Mux12.IN6
-sel[0] => Mux13.IN6
-sel[0] => Mux14.IN6
-sel[0] => Mux15.IN6
-sel[0] => Mux16.IN6
-sel[0] => Mux17.IN6
-sel[0] => Mux18.IN6
-sel[0] => Mux19.IN6
-sel[1] => Mux0.IN5
-sel[1] => Mux1.IN5
-sel[1] => Mux2.IN5
-sel[1] => Mux3.IN5
-sel[1] => Mux4.IN5
-sel[1] => Mux5.IN5
-sel[1] => Mux6.IN5
-sel[1] => Mux7.IN5
-sel[1] => Mux8.IN5
-sel[1] => Mux9.IN5
-sel[1] => Mux10.IN5
-sel[1] => Mux11.IN5
-sel[1] => Mux12.IN5
-sel[1] => Mux13.IN5
-sel[1] => Mux14.IN5
-sel[1] => Mux15.IN5
-sel[1] => Mux16.IN5
-sel[1] => Mux17.IN5
-sel[1] => Mux18.IN5
-sel[1] => Mux19.IN5
-sel[2] => Mux0.IN4
-sel[2] => Mux1.IN4
-sel[2] => Mux2.IN4
-sel[2] => Mux3.IN4
-sel[2] => Mux4.IN4
-sel[2] => Mux5.IN4
-sel[2] => Mux6.IN4
-sel[2] => Mux7.IN4
-sel[2] => Mux8.IN4
-sel[2] => Mux9.IN4
-sel[2] => Mux10.IN4
-sel[2] => Mux11.IN4
-sel[2] => Mux12.IN4
-sel[2] => Mux13.IN4
-sel[2] => Mux14.IN4
-sel[2] => Mux15.IN4
-sel[2] => Mux16.IN4
-sel[2] => Mux17.IN4
-sel[2] => Mux18.IN4
-sel[2] => Mux19.IN4
-Out[0] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
-Out[2] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
-Out[3] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-Out[4] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-Out[5] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-Out[6] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-Out[7] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-Out[8] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-Out[9] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-Out[10] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-Out[11] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-Out[12] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-Out[13] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-Out[14] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-Out[15] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-Out[16] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-Out[17] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-N <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-Z <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
-V <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
-C <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-A[4] => A[4].IN1
-A[5] => A[5].IN1
-A[6] => A[6].IN1
-A[7] => A[7].IN1
-A[8] => A[8].IN1
-A[9] => A[9].IN1
-A[10] => A[10].IN1
-A[11] => A[11].IN1
-A[12] => A[12].IN1
-A[13] => A[13].IN1
-A[14] => A[14].IN1
-A[15] => A[15].IN1
-A[16] => A[16].IN1
-A[17] => A[17].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-B[4] => B[4].IN1
-B[5] => B[5].IN1
-B[6] => B[6].IN1
-B[7] => B[7].IN1
-B[8] => B[8].IN1
-B[9] => B[9].IN1
-B[10] => B[10].IN1
-B[11] => B[11].IN1
-B[12] => B[12].IN1
-B[13] => B[13].IN1
-B[14] => B[14].IN1
-B[15] => B[15].IN1
-B[16] => B[16].IN1
-B[17] => B[17].IN1
-S[0] <= FullAdder:generate_Adder_Substractor[0].bitAdder.port3
-S[1] <= FullAdder:generate_Adder_Substractor[1].bitAdder.port3
-S[2] <= FullAdder:generate_Adder_Substractor[2].bitAdder.port3
-S[3] <= FullAdder:generate_Adder_Substractor[3].bitAdder.port3
-S[4] <= FullAdder:generate_Adder_Substractor[4].bitAdder.port3
-S[5] <= FullAdder:generate_Adder_Substractor[5].bitAdder.port3
-S[6] <= FullAdder:generate_Adder_Substractor[6].bitAdder.port3
-S[7] <= FullAdder:generate_Adder_Substractor[7].bitAdder.port3
-S[8] <= FullAdder:generate_Adder_Substractor[8].bitAdder.port3
-S[9] <= FullAdder:generate_Adder_Substractor[9].bitAdder.port3
-S[10] <= FullAdder:generate_Adder_Substractor[10].bitAdder.port3
-S[11] <= FullAdder:generate_Adder_Substractor[11].bitAdder.port3
-S[12] <= FullAdder:generate_Adder_Substractor[12].bitAdder.port3
-S[13] <= FullAdder:generate_Adder_Substractor[13].bitAdder.port3
-S[14] <= FullAdder:generate_Adder_Substractor[14].bitAdder.port3
-S[15] <= FullAdder:generate_Adder_Substractor[15].bitAdder.port3
-S[16] <= FullAdder:generate_Adder_Substractor[16].bitAdder.port3
-S[17] <= FullAdder:generate_Adder_Substractor[17].bitAdder.port3
-SUBS => SUBS.IN2
-Cout <= FullAdder:generate_Adder_Substractor[17].bitAdder.port4
-V <= V.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|Complement:FullComplement
-A[0] => ComplementCalc[0].checkSubs.IN0
-A[1] => ComplementCalc[1].checkSubs.IN0
-A[2] => ComplementCalc[2].checkSubs.IN0
-A[3] => ComplementCalc[3].checkSubs.IN0
-A[4] => ComplementCalc[4].checkSubs.IN0
-A[5] => ComplementCalc[5].checkSubs.IN0
-A[6] => ComplementCalc[6].checkSubs.IN0
-A[7] => ComplementCalc[7].checkSubs.IN0
-A[8] => ComplementCalc[8].checkSubs.IN0
-A[9] => ComplementCalc[9].checkSubs.IN0
-A[10] => ComplementCalc[10].checkSubs.IN0
-A[11] => ComplementCalc[11].checkSubs.IN0
-A[12] => ComplementCalc[12].checkSubs.IN0
-A[13] => ComplementCalc[13].checkSubs.IN0
-A[14] => ComplementCalc[14].checkSubs.IN0
-A[15] => ComplementCalc[15].checkSubs.IN0
-A[16] => ComplementCalc[16].checkSubs.IN0
-A[17] => ComplementCalc[17].checkSubs.IN0
-SUBS => ComplementCalc[0].checkSubs.IN1
-SUBS => ComplementCalc[1].checkSubs.IN1
-SUBS => ComplementCalc[2].checkSubs.IN1
-SUBS => ComplementCalc[3].checkSubs.IN1
-SUBS => ComplementCalc[4].checkSubs.IN1
-SUBS => ComplementCalc[5].checkSubs.IN1
-SUBS => ComplementCalc[6].checkSubs.IN1
-SUBS => ComplementCalc[7].checkSubs.IN1
-SUBS => ComplementCalc[8].checkSubs.IN1
-SUBS => ComplementCalc[9].checkSubs.IN1
-SUBS => ComplementCalc[10].checkSubs.IN1
-SUBS => ComplementCalc[11].checkSubs.IN1
-SUBS => ComplementCalc[12].checkSubs.IN1
-SUBS => ComplementCalc[13].checkSubs.IN1
-SUBS => ComplementCalc[14].checkSubs.IN1
-SUBS => ComplementCalc[15].checkSubs.IN1
-SUBS => ComplementCalc[16].checkSubs.IN1
-SUBS => ComplementCalc[17].checkSubs.IN1
-S[0] <= ComplementCalc[0].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= ComplementCalc[1].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= ComplementCalc[2].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= ComplementCalc[3].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= ComplementCalc[4].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= ComplementCalc[5].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[6] <= ComplementCalc[6].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[7] <= ComplementCalc[7].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[8] <= ComplementCalc[8].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[9] <= ComplementCalc[9].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[10] <= ComplementCalc[10].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[11] <= ComplementCalc[11].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[12] <= ComplementCalc[12].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[13] <= ComplementCalc[13].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[14] <= ComplementCalc[14].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[15] <= ComplementCalc[15].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[16] <= ComplementCalc[16].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[17] <= ComplementCalc[17].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[0].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[1].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[2].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[3].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[4].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[5].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[6].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[7].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[8].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[9].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[10].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[11].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[12].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[13].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[14].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[15].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[16].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Sumador|FullAdder:generate_Adder_Substractor[17].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-A[4] => A[4].IN1
-A[5] => A[5].IN1
-A[6] => A[6].IN1
-A[7] => A[7].IN1
-A[8] => A[8].IN1
-A[9] => A[9].IN1
-A[10] => A[10].IN1
-A[11] => A[11].IN1
-A[12] => A[12].IN1
-A[13] => A[13].IN1
-A[14] => A[14].IN1
-A[15] => A[15].IN1
-A[16] => A[16].IN1
-A[17] => A[17].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-B[4] => B[4].IN1
-B[5] => B[5].IN1
-B[6] => B[6].IN1
-B[7] => B[7].IN1
-B[8] => B[8].IN1
-B[9] => B[9].IN1
-B[10] => B[10].IN1
-B[11] => B[11].IN1
-B[12] => B[12].IN1
-B[13] => B[13].IN1
-B[14] => B[14].IN1
-B[15] => B[15].IN1
-B[16] => B[16].IN1
-B[17] => B[17].IN1
-S[0] <= FullAdder:generate_Adder_Substractor[0].bitAdder.port3
-S[1] <= FullAdder:generate_Adder_Substractor[1].bitAdder.port3
-S[2] <= FullAdder:generate_Adder_Substractor[2].bitAdder.port3
-S[3] <= FullAdder:generate_Adder_Substractor[3].bitAdder.port3
-S[4] <= FullAdder:generate_Adder_Substractor[4].bitAdder.port3
-S[5] <= FullAdder:generate_Adder_Substractor[5].bitAdder.port3
-S[6] <= FullAdder:generate_Adder_Substractor[6].bitAdder.port3
-S[7] <= FullAdder:generate_Adder_Substractor[7].bitAdder.port3
-S[8] <= FullAdder:generate_Adder_Substractor[8].bitAdder.port3
-S[9] <= FullAdder:generate_Adder_Substractor[9].bitAdder.port3
-S[10] <= FullAdder:generate_Adder_Substractor[10].bitAdder.port3
-S[11] <= FullAdder:generate_Adder_Substractor[11].bitAdder.port3
-S[12] <= FullAdder:generate_Adder_Substractor[12].bitAdder.port3
-S[13] <= FullAdder:generate_Adder_Substractor[13].bitAdder.port3
-S[14] <= FullAdder:generate_Adder_Substractor[14].bitAdder.port3
-S[15] <= FullAdder:generate_Adder_Substractor[15].bitAdder.port3
-S[16] <= FullAdder:generate_Adder_Substractor[16].bitAdder.port3
-S[17] <= FullAdder:generate_Adder_Substractor[17].bitAdder.port3
-SUBS => SUBS.IN2
-Cout <= FullAdder:generate_Adder_Substractor[17].bitAdder.port4
-V <= V.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|Complement:FullComplement
-A[0] => ComplementCalc[0].checkSubs.IN0
-A[1] => ComplementCalc[1].checkSubs.IN0
-A[2] => ComplementCalc[2].checkSubs.IN0
-A[3] => ComplementCalc[3].checkSubs.IN0
-A[4] => ComplementCalc[4].checkSubs.IN0
-A[5] => ComplementCalc[5].checkSubs.IN0
-A[6] => ComplementCalc[6].checkSubs.IN0
-A[7] => ComplementCalc[7].checkSubs.IN0
-A[8] => ComplementCalc[8].checkSubs.IN0
-A[9] => ComplementCalc[9].checkSubs.IN0
-A[10] => ComplementCalc[10].checkSubs.IN0
-A[11] => ComplementCalc[11].checkSubs.IN0
-A[12] => ComplementCalc[12].checkSubs.IN0
-A[13] => ComplementCalc[13].checkSubs.IN0
-A[14] => ComplementCalc[14].checkSubs.IN0
-A[15] => ComplementCalc[15].checkSubs.IN0
-A[16] => ComplementCalc[16].checkSubs.IN0
-A[17] => ComplementCalc[17].checkSubs.IN0
-SUBS => ComplementCalc[0].checkSubs.IN1
-SUBS => ComplementCalc[1].checkSubs.IN1
-SUBS => ComplementCalc[2].checkSubs.IN1
-SUBS => ComplementCalc[3].checkSubs.IN1
-SUBS => ComplementCalc[4].checkSubs.IN1
-SUBS => ComplementCalc[5].checkSubs.IN1
-SUBS => ComplementCalc[6].checkSubs.IN1
-SUBS => ComplementCalc[7].checkSubs.IN1
-SUBS => ComplementCalc[8].checkSubs.IN1
-SUBS => ComplementCalc[9].checkSubs.IN1
-SUBS => ComplementCalc[10].checkSubs.IN1
-SUBS => ComplementCalc[11].checkSubs.IN1
-SUBS => ComplementCalc[12].checkSubs.IN1
-SUBS => ComplementCalc[13].checkSubs.IN1
-SUBS => ComplementCalc[14].checkSubs.IN1
-SUBS => ComplementCalc[15].checkSubs.IN1
-SUBS => ComplementCalc[16].checkSubs.IN1
-SUBS => ComplementCalc[17].checkSubs.IN1
-S[0] <= ComplementCalc[0].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= ComplementCalc[1].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= ComplementCalc[2].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= ComplementCalc[3].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= ComplementCalc[4].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= ComplementCalc[5].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[6] <= ComplementCalc[6].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[7] <= ComplementCalc[7].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[8] <= ComplementCalc[8].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[9] <= ComplementCalc[9].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[10] <= ComplementCalc[10].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[11] <= ComplementCalc[11].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[12] <= ComplementCalc[12].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[13] <= ComplementCalc[13].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[14] <= ComplementCalc[14].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[15] <= ComplementCalc[15].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[16] <= ComplementCalc[16].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-S[17] <= ComplementCalc[17].checkSubs.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[0].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[1].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[2].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[3].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[4].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[5].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[6].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[7].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[8].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[9].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[10].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[11].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[12].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[13].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[14].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[15].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[16].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|Adder_Substractor:Restador|FullAdder:generate_Adder_Substractor[17].bitAdder
-A => AxorB.IN0
-A => AandB.IN0
-B => AxorB.IN1
-B => AandB.IN1
-Cin => W_1xorCin.IN1
-Cin => W_1andCin.IN1
-S <= W_1xorCin.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= W_1orW_2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplicador:Multiplicador
-A[0] => Mult0.IN17
-A[1] => Mult0.IN16
-A[2] => Mult0.IN15
-A[3] => Mult0.IN14
-A[4] => Mult0.IN13
-A[5] => Mult0.IN12
-A[6] => Mult0.IN11
-A[7] => Mult0.IN10
-A[8] => Mult0.IN9
-A[9] => Mult0.IN8
-A[10] => Mult0.IN7
-A[11] => Mult0.IN6
-A[12] => Mult0.IN5
-A[13] => Mult0.IN4
-A[14] => Mult0.IN3
-A[15] => Mult0.IN2
-A[16] => Mult0.IN1
-A[17] => Mult0.IN0
-B[0] => Mult0.IN35
-B[1] => Mult0.IN34
-B[2] => Mult0.IN33
-B[3] => Mult0.IN32
-B[4] => Mult0.IN31
-B[5] => Mult0.IN30
-B[6] => Mult0.IN29
-B[7] => Mult0.IN28
-B[8] => Mult0.IN27
-B[9] => Mult0.IN26
-B[10] => Mult0.IN25
-B[11] => Mult0.IN24
-B[12] => Mult0.IN23
-B[13] => Mult0.IN22
-B[14] => Mult0.IN21
-B[15] => Mult0.IN20
-B[16] => Mult0.IN19
-B[17] => Mult0.IN18
-out[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[16] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-out[17] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-overflow <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
-car <= <GND>
-
-
-|ALU|divisor:Divisor
-A[0] => Div0.IN17
-A[1] => Div0.IN16
-A[2] => Div0.IN15
-A[3] => Div0.IN14
-A[4] => Div0.IN13
-A[5] => Div0.IN12
-A[6] => Div0.IN11
-A[7] => Div0.IN10
-A[8] => Div0.IN9
-A[9] => Div0.IN8
-A[10] => Div0.IN7
-A[11] => Div0.IN6
-A[12] => Div0.IN5
-A[13] => Div0.IN4
-A[14] => Div0.IN3
-A[15] => Div0.IN2
-A[16] => Div0.IN1
-A[17] => Div0.IN0
-B[0] => Div0.IN35
-B[1] => Div0.IN34
-B[2] => Div0.IN33
-B[3] => Div0.IN32
-B[4] => Div0.IN31
-B[5] => Div0.IN30
-B[6] => Div0.IN29
-B[7] => Div0.IN28
-B[8] => Div0.IN27
-B[9] => Div0.IN26
-B[10] => Div0.IN25
-B[11] => Div0.IN24
-B[12] => Div0.IN23
-B[13] => Div0.IN22
-B[14] => Div0.IN21
-B[15] => Div0.IN20
-B[16] => Div0.IN19
-B[17] => Div0.IN18
-out[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[14] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[15] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[16] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-out[17] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-overflow <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-car <= <GND>
+|memory
+writeEnable => RAM.we_a.DATAIN
+writeEnable => RAM.WE
+clk => RAM.we_a.CLK
+clk => RAM.waddr_a[9].CLK
+clk => RAM.waddr_a[8].CLK
+clk => RAM.waddr_a[7].CLK
+clk => RAM.waddr_a[6].CLK
+clk => RAM.waddr_a[5].CLK
+clk => RAM.waddr_a[4].CLK
+clk => RAM.waddr_a[3].CLK
+clk => RAM.waddr_a[2].CLK
+clk => RAM.waddr_a[1].CLK
+clk => RAM.waddr_a[0].CLK
+clk => RAM.data_a[63].CLK
+clk => RAM.data_a[62].CLK
+clk => RAM.data_a[61].CLK
+clk => RAM.data_a[60].CLK
+clk => RAM.data_a[59].CLK
+clk => RAM.data_a[58].CLK
+clk => RAM.data_a[57].CLK
+clk => RAM.data_a[56].CLK
+clk => RAM.data_a[55].CLK
+clk => RAM.data_a[54].CLK
+clk => RAM.data_a[53].CLK
+clk => RAM.data_a[52].CLK
+clk => RAM.data_a[51].CLK
+clk => RAM.data_a[50].CLK
+clk => RAM.data_a[49].CLK
+clk => RAM.data_a[48].CLK
+clk => RAM.data_a[47].CLK
+clk => RAM.data_a[46].CLK
+clk => RAM.data_a[45].CLK
+clk => RAM.data_a[44].CLK
+clk => RAM.data_a[43].CLK
+clk => RAM.data_a[42].CLK
+clk => RAM.data_a[41].CLK
+clk => RAM.data_a[40].CLK
+clk => RAM.data_a[39].CLK
+clk => RAM.data_a[38].CLK
+clk => RAM.data_a[37].CLK
+clk => RAM.data_a[36].CLK
+clk => RAM.data_a[35].CLK
+clk => RAM.data_a[34].CLK
+clk => RAM.data_a[33].CLK
+clk => RAM.data_a[32].CLK
+clk => RAM.data_a[31].CLK
+clk => RAM.data_a[30].CLK
+clk => RAM.data_a[29].CLK
+clk => RAM.data_a[28].CLK
+clk => RAM.data_a[27].CLK
+clk => RAM.data_a[26].CLK
+clk => RAM.data_a[25].CLK
+clk => RAM.data_a[24].CLK
+clk => RAM.data_a[23].CLK
+clk => RAM.data_a[22].CLK
+clk => RAM.data_a[21].CLK
+clk => RAM.data_a[20].CLK
+clk => RAM.data_a[19].CLK
+clk => RAM.data_a[18].CLK
+clk => RAM.data_a[17].CLK
+clk => RAM.data_a[16].CLK
+clk => RAM.data_a[15].CLK
+clk => RAM.data_a[14].CLK
+clk => RAM.data_a[13].CLK
+clk => RAM.data_a[12].CLK
+clk => RAM.data_a[11].CLK
+clk => RAM.data_a[10].CLK
+clk => RAM.data_a[9].CLK
+clk => RAM.data_a[8].CLK
+clk => RAM.data_a[7].CLK
+clk => RAM.data_a[6].CLK
+clk => RAM.data_a[5].CLK
+clk => RAM.data_a[4].CLK
+clk => RAM.data_a[3].CLK
+clk => RAM.data_a[2].CLK
+clk => RAM.data_a[1].CLK
+clk => RAM.data_a[0].CLK
+clk => RAM.CLK0
+readAddress[0] => RAM.RADDR
+readAddress[1] => RAM.RADDR1
+readAddress[2] => RAM.RADDR2
+readAddress[3] => RAM.RADDR3
+readAddress[4] => RAM.RADDR4
+readAddress[5] => RAM.RADDR5
+readAddress[6] => RAM.RADDR6
+readAddress[7] => RAM.RADDR7
+readAddress[8] => RAM.RADDR8
+readAddress[9] => RAM.RADDR9
+readAddress[10] => ~NO_FANOUT~
+readAddress[11] => ~NO_FANOUT~
+readAddress[12] => ~NO_FANOUT~
+readAddress[13] => ~NO_FANOUT~
+readAddress[14] => ~NO_FANOUT~
+readAddress[15] => ~NO_FANOUT~
+readAddress[16] => ~NO_FANOUT~
+readAddress[17] => ~NO_FANOUT~
+readAddress[18] => ~NO_FANOUT~
+writeAddress[0] => RAM.waddr_a[0].DATAIN
+writeAddress[0] => RAM.WADDR
+writeAddress[1] => RAM.waddr_a[1].DATAIN
+writeAddress[1] => RAM.WADDR1
+writeAddress[2] => RAM.waddr_a[2].DATAIN
+writeAddress[2] => RAM.WADDR2
+writeAddress[3] => RAM.waddr_a[3].DATAIN
+writeAddress[3] => RAM.WADDR3
+writeAddress[4] => RAM.waddr_a[4].DATAIN
+writeAddress[4] => RAM.WADDR4
+writeAddress[5] => RAM.waddr_a[5].DATAIN
+writeAddress[5] => RAM.WADDR5
+writeAddress[6] => RAM.waddr_a[6].DATAIN
+writeAddress[6] => RAM.WADDR6
+writeAddress[7] => RAM.waddr_a[7].DATAIN
+writeAddress[7] => RAM.WADDR7
+writeAddress[8] => RAM.waddr_a[8].DATAIN
+writeAddress[8] => RAM.WADDR8
+writeAddress[9] => RAM.waddr_a[9].DATAIN
+writeAddress[9] => RAM.WADDR9
+writeAddress[10] => ~NO_FANOUT~
+writeAddress[11] => ~NO_FANOUT~
+writeAddress[12] => ~NO_FANOUT~
+writeAddress[13] => ~NO_FANOUT~
+writeAddress[14] => ~NO_FANOUT~
+writeAddress[15] => ~NO_FANOUT~
+writeAddress[16] => ~NO_FANOUT~
+writeAddress[17] => ~NO_FANOUT~
+writeAddress[18] => ~NO_FANOUT~
+inputData[0] => RAM.data_a[0].DATAIN
+inputData[0] => RAM.DATAIN
+inputData[1] => RAM.data_a[1].DATAIN
+inputData[1] => RAM.DATAIN1
+inputData[2] => RAM.data_a[2].DATAIN
+inputData[2] => RAM.DATAIN2
+inputData[3] => RAM.data_a[3].DATAIN
+inputData[3] => RAM.DATAIN3
+inputData[4] => RAM.data_a[4].DATAIN
+inputData[4] => RAM.DATAIN4
+inputData[5] => RAM.data_a[5].DATAIN
+inputData[5] => RAM.DATAIN5
+inputData[6] => RAM.data_a[6].DATAIN
+inputData[6] => RAM.DATAIN6
+inputData[7] => RAM.data_a[7].DATAIN
+inputData[7] => RAM.DATAIN7
+inputData[8] => RAM.data_a[8].DATAIN
+inputData[8] => RAM.DATAIN8
+inputData[9] => RAM.data_a[9].DATAIN
+inputData[9] => RAM.DATAIN9
+inputData[10] => RAM.data_a[10].DATAIN
+inputData[10] => RAM.DATAIN10
+inputData[11] => RAM.data_a[11].DATAIN
+inputData[11] => RAM.DATAIN11
+inputData[12] => RAM.data_a[12].DATAIN
+inputData[12] => RAM.DATAIN12
+inputData[13] => RAM.data_a[13].DATAIN
+inputData[13] => RAM.DATAIN13
+inputData[14] => RAM.data_a[14].DATAIN
+inputData[14] => RAM.DATAIN14
+inputData[15] => RAM.data_a[15].DATAIN
+inputData[15] => RAM.DATAIN15
+inputData[16] => RAM.data_a[16].DATAIN
+inputData[16] => RAM.DATAIN16
+inputData[17] => RAM.data_a[17].DATAIN
+inputData[17] => RAM.DATAIN17
+inputData[18] => RAM.data_a[18].DATAIN
+inputData[18] => RAM.DATAIN18
+inputData[19] => RAM.data_a[19].DATAIN
+inputData[19] => RAM.DATAIN19
+inputData[20] => RAM.data_a[20].DATAIN
+inputData[20] => RAM.DATAIN20
+inputData[21] => RAM.data_a[21].DATAIN
+inputData[21] => RAM.DATAIN21
+inputData[22] => RAM.data_a[22].DATAIN
+inputData[22] => RAM.DATAIN22
+inputData[23] => RAM.data_a[23].DATAIN
+inputData[23] => RAM.DATAIN23
+inputData[24] => RAM.data_a[24].DATAIN
+inputData[24] => RAM.DATAIN24
+inputData[25] => RAM.data_a[25].DATAIN
+inputData[25] => RAM.DATAIN25
+inputData[26] => RAM.data_a[26].DATAIN
+inputData[26] => RAM.DATAIN26
+inputData[27] => RAM.data_a[27].DATAIN
+inputData[27] => RAM.DATAIN27
+inputData[28] => RAM.data_a[28].DATAIN
+inputData[28] => RAM.DATAIN28
+inputData[29] => RAM.data_a[29].DATAIN
+inputData[29] => RAM.DATAIN29
+inputData[30] => RAM.data_a[30].DATAIN
+inputData[30] => RAM.DATAIN30
+inputData[31] => RAM.data_a[31].DATAIN
+inputData[31] => RAM.DATAIN31
+inputData[32] => RAM.data_a[32].DATAIN
+inputData[32] => RAM.DATAIN32
+inputData[33] => RAM.data_a[33].DATAIN
+inputData[33] => RAM.DATAIN33
+inputData[34] => RAM.data_a[34].DATAIN
+inputData[34] => RAM.DATAIN34
+inputData[35] => RAM.data_a[35].DATAIN
+inputData[35] => RAM.DATAIN35
+inputData[36] => RAM.data_a[36].DATAIN
+inputData[36] => RAM.DATAIN36
+inputData[37] => RAM.data_a[37].DATAIN
+inputData[37] => RAM.DATAIN37
+inputData[38] => RAM.data_a[38].DATAIN
+inputData[38] => RAM.DATAIN38
+inputData[39] => RAM.data_a[39].DATAIN
+inputData[39] => RAM.DATAIN39
+inputData[40] => RAM.data_a[40].DATAIN
+inputData[40] => RAM.DATAIN40
+inputData[41] => RAM.data_a[41].DATAIN
+inputData[41] => RAM.DATAIN41
+inputData[42] => RAM.data_a[42].DATAIN
+inputData[42] => RAM.DATAIN42
+inputData[43] => RAM.data_a[43].DATAIN
+inputData[43] => RAM.DATAIN43
+inputData[44] => RAM.data_a[44].DATAIN
+inputData[44] => RAM.DATAIN44
+inputData[45] => RAM.data_a[45].DATAIN
+inputData[45] => RAM.DATAIN45
+inputData[46] => RAM.data_a[46].DATAIN
+inputData[46] => RAM.DATAIN46
+inputData[47] => RAM.data_a[47].DATAIN
+inputData[47] => RAM.DATAIN47
+inputData[48] => RAM.data_a[48].DATAIN
+inputData[48] => RAM.DATAIN48
+inputData[49] => RAM.data_a[49].DATAIN
+inputData[49] => RAM.DATAIN49
+inputData[50] => RAM.data_a[50].DATAIN
+inputData[50] => RAM.DATAIN50
+inputData[51] => RAM.data_a[51].DATAIN
+inputData[51] => RAM.DATAIN51
+inputData[52] => RAM.data_a[52].DATAIN
+inputData[52] => RAM.DATAIN52
+inputData[53] => RAM.data_a[53].DATAIN
+inputData[53] => RAM.DATAIN53
+inputData[54] => RAM.data_a[54].DATAIN
+inputData[54] => RAM.DATAIN54
+inputData[55] => RAM.data_a[55].DATAIN
+inputData[55] => RAM.DATAIN55
+inputData[56] => RAM.data_a[56].DATAIN
+inputData[56] => RAM.DATAIN56
+inputData[57] => RAM.data_a[57].DATAIN
+inputData[57] => RAM.DATAIN57
+inputData[58] => RAM.data_a[58].DATAIN
+inputData[58] => RAM.DATAIN58
+inputData[59] => RAM.data_a[59].DATAIN
+inputData[59] => RAM.DATAIN59
+inputData[60] => RAM.data_a[60].DATAIN
+inputData[60] => RAM.DATAIN60
+inputData[61] => RAM.data_a[61].DATAIN
+inputData[61] => RAM.DATAIN61
+inputData[62] => RAM.data_a[62].DATAIN
+inputData[62] => RAM.DATAIN62
+inputData[63] => RAM.data_a[63].DATAIN
+inputData[63] => RAM.DATAIN63
+outputData[0] <= RAM.DATAOUT
+outputData[1] <= RAM.DATAOUT1
+outputData[2] <= RAM.DATAOUT2
+outputData[3] <= RAM.DATAOUT3
+outputData[4] <= RAM.DATAOUT4
+outputData[5] <= RAM.DATAOUT5
+outputData[6] <= RAM.DATAOUT6
+outputData[7] <= RAM.DATAOUT7
+outputData[8] <= RAM.DATAOUT8
+outputData[9] <= RAM.DATAOUT9
+outputData[10] <= RAM.DATAOUT10
+outputData[11] <= RAM.DATAOUT11
+outputData[12] <= RAM.DATAOUT12
+outputData[13] <= RAM.DATAOUT13
+outputData[14] <= RAM.DATAOUT14
+outputData[15] <= RAM.DATAOUT15
+outputData[16] <= RAM.DATAOUT16
+outputData[17] <= RAM.DATAOUT17
+outputData[18] <= RAM.DATAOUT18
+outputData[19] <= RAM.DATAOUT19
+outputData[20] <= RAM.DATAOUT20
+outputData[21] <= RAM.DATAOUT21
+outputData[22] <= RAM.DATAOUT22
+outputData[23] <= RAM.DATAOUT23
+outputData[24] <= RAM.DATAOUT24
+outputData[25] <= RAM.DATAOUT25
+outputData[26] <= RAM.DATAOUT26
+outputData[27] <= RAM.DATAOUT27
+outputData[28] <= RAM.DATAOUT28
+outputData[29] <= RAM.DATAOUT29
+outputData[30] <= RAM.DATAOUT30
+outputData[31] <= RAM.DATAOUT31
+outputData[32] <= RAM.DATAOUT32
+outputData[33] <= RAM.DATAOUT33
+outputData[34] <= RAM.DATAOUT34
+outputData[35] <= RAM.DATAOUT35
+outputData[36] <= RAM.DATAOUT36
+outputData[37] <= RAM.DATAOUT37
+outputData[38] <= RAM.DATAOUT38
+outputData[39] <= RAM.DATAOUT39
+outputData[40] <= RAM.DATAOUT40
+outputData[41] <= RAM.DATAOUT41
+outputData[42] <= RAM.DATAOUT42
+outputData[43] <= RAM.DATAOUT43
+outputData[44] <= RAM.DATAOUT44
+outputData[45] <= RAM.DATAOUT45
+outputData[46] <= RAM.DATAOUT46
+outputData[47] <= RAM.DATAOUT47
+outputData[48] <= RAM.DATAOUT48
+outputData[49] <= RAM.DATAOUT49
+outputData[50] <= RAM.DATAOUT50
+outputData[51] <= RAM.DATAOUT51
+outputData[52] <= RAM.DATAOUT52
+outputData[53] <= RAM.DATAOUT53
+outputData[54] <= RAM.DATAOUT54
+outputData[55] <= RAM.DATAOUT55
+outputData[56] <= RAM.DATAOUT56
+outputData[57] <= RAM.DATAOUT57
+outputData[58] <= RAM.DATAOUT58
+outputData[59] <= RAM.DATAOUT59
+outputData[60] <= RAM.DATAOUT60
+outputData[61] <= RAM.DATAOUT61
+outputData[62] <= RAM.DATAOUT62
+outputData[63] <= RAM.DATAOUT63
 
 
