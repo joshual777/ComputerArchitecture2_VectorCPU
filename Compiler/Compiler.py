@@ -232,10 +232,10 @@ def ProcessingText():
         else :
             processInst = IntructionAnalyzer(codeline)  #Send the instruction to the analyzer
             linesWrite.append(processInst)              #Append the process line to write
-"""          
+        
     newFile = open(OutputFile, 'w+')
     for linetoWrite in linesWrite:
         if linetoWrite != None:
             newFile.write(linetoWrite + "\n")
-"""
+
 ProcessingText()
