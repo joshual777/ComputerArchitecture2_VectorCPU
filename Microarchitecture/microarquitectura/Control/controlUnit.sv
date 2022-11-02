@@ -81,7 +81,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableScalarWBD = 1'b1;
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
-         useInmediateED = 1'b1;
+         useInmediateED = 1'b0;
          aluControlED = 4'b111;
          outFlagMD = 1'b0;
 			
