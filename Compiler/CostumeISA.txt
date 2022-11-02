@@ -42,7 +42,7 @@ SUB r1, r1, r5 //Le resta el step al color para el degradado
 MOV r8, 0 //Reinicia a 0 el contador de x
 JMP _Rojo
 
- _PVERDE:
+_PVERDE:
 
 DIV r5, r2, 105  //RS
 

@@ -303,3 +303,5 @@
 # run -all
 # ** Warning: (vsim-PLI-3407) Too many data words read on line 501 of file "C://Users//abiga//Desktop//ArquiII//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Memory//data.txt". (Current address [500], address range [0:499])    : C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv(29)
 #    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Memory
+# End time: 22:30:45 on Nov 01,2022, Elapsed time: 0:10:53
+# Errors: 0, Warnings: 13
