@@ -42,7 +42,6 @@ SUB r1, r1, r5 //Le resta el step al color para el degradado
 MOV r8, 0 //Reinicia a 0 el contador de x
 JMP _Rojo
 
-<<<<<<< HEAD
  _PVERDE:
 
 DIV r5, r2, 105  //RS
@@ -51,7 +50,7 @@ DIV r5, r2, 105  //RS
 MOV r7, 0 //Contador x
 MOV r8, 0 //Contador y
 //Carga la posicion de memoria donde esta la imagen de entrada, rojo
-MOV r12, 0 //Pos rojo
+MOV r12, 1352 //Pos verde
 ADD r13, r10 //Dir de escritura
 
 _VERDE:
@@ -86,7 +85,7 @@ DIV r5, r3, 105  //RS
 MOV r7, 0 //Contador x
 MOV r8, 0 //Contador y
 //Carga la posicion de memoria donde esta la imagen de entrada, rojo
-MOV r12, 0 //Pos rojo
+MOV r12, 274 //Pos Azul
 ADD r13, r10 //Dir de escritura
 
 _AZUL:
@@ -115,10 +114,3 @@ JMP _AZUL
 
 _PRINT:
 
-=======
-//Falta verde
-_PVERDE:
-//Falta azul
-//Falta pintar
-_resta
->>>>>>> 6047d994cd5c421a7cbd201bda179c4797a7b16b
