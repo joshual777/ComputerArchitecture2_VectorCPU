@@ -12,7 +12,7 @@
 	outputs:
 	- 
 */
-module memory #(parameter MEM_SIZE = 2000, 
+module memory #(parameter MEM_SIZE = 500, 
 					 parameter DATA_INTEGER_WIDTH = 64,
 					 parameter DATA_WIDTH = 64, 
 					 parameter ADDRESS_WIDTH = 19 )(
@@ -26,7 +26,7 @@ module memory #(parameter MEM_SIZE = 2000,
 	logic [DATA_WIDTH-1:0] tempOutputData;
 	
 	initial
-		$readmemb("C://Users//User//Desktop//X_SEMESTRE_2022//Arquitectura_de_Computadores_2//Proyecto_2//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Memory//data.txt", RAM);
+		$readmemb("C://Users//abiga//Desktop//ArquiII//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Memory//data.txt", RAM);
 	
 	always_comb begin
 		tempOutputData = RAM[readAddress];

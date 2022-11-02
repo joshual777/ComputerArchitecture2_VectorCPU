@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Sun Oct 30 15:59:08 2022
+Analysis & Synthesis Status : Successful - Tue Nov 01 22:19:27 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : VectorizedCPU
-Top-level Entity Name : memory
+Top-level Entity Name : CPU
 Family : Cyclone IV GX
-Total logic elements : 107,724
-    Total combinational functions : 78,105
-    Dedicated logic registers : 64,000
-Total registers : 64000
-Total pins : 168
+Total logic elements : 1,585
+    Total combinational functions : 1,303
+    Dedicated logic registers : 594
+Total registers : 594
+Total pins : 68
 Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Total memory bits : 32,608
+Embedded Multiplier 9-bit elements : 9
 Total GXB Receiver Channel PCS : 0
 Total GXB Receiver Channel PMA : 0
 Total GXB Transmitter Channel PCS : 0

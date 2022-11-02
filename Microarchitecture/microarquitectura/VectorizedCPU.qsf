@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE EP4CGX150DF31C7
-set_global_assignment -name TOP_LEVEL_ENTITY memory
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:17:15  APRIL 15, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -92,15 +92,11 @@ set_global_assignment -name SYSTEMVERILOG_FILE Memory/memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/vectorRegFile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/scalarRegFile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/mux2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/shiftR_modulo.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/shiftL_modulo.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/or_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/multiplicador.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/FullAdder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/divisor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/Complement.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/and_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/ALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/mux3.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/Execute.sv
@@ -122,9 +118,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE Tests/testFecth.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testDecode.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testExecute.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testMemory.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testControlUnit.sv -section_id testControlUnit
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testCondUnit.sv -section_id testCondUnit
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testCPU.sv -section_id testCPU
@@ -134,4 +127,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testFecth.sv -section_id t
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testDecode.sv -section_id testDecode
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testExecute.sv -section_id testExecute
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testMemory.sv -section_id testMemory
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

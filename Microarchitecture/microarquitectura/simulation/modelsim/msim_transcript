@@ -10,94 +10,290 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:50 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv 
+# -- Compiling module Adder_Substractor
+# 
+# Top level modules:
+# 	Adder_Substractor
+# End time: 22:19:50 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:50 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorAdderSubstractor.sv 
+# -- Compiling module vectorAdderSubstractor
+# 
+# Top level modules:
+# 	vectorAdderSubstractor
+# End time: 22:19:50 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/vectorRegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:50 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/vectorRegFile.sv 
+# -- Compiling module vectorRegFile
+# 
+# Top level modules:
+# 	vectorRegFile
+# End time: 22:19:50 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/scalarRegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:50 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/scalarRegFile.sv 
+# -- Compiling module scalarRegFile
+# 
+# Top level modules:
+# 	scalarRegFile
+# End time: 22:19:50 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:50 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 22:19:50 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
+# Start time: 22:19:50 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/multiplicador.sv 
 # -- Compiling module multiplicador
 # 
 # Top level modules:
 # 	multiplicador
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
+# Start time: 22:19:51 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/FullAdder.sv 
 # -- Compiling module FullAdder
 # 
 # Top level modules:
 # 	FullAdder
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
+# Start time: 22:19:51 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv 
 # -- Compiling module divisor
 # ** Warning: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/divisor.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	divisor
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
+# Start time: 22:19:51 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Complement.sv 
 # -- Compiling module Complement
 # 
 # Top level modules:
 # 	Complement
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
+# Start time: 22:19:51 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv}
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv 
-# -- Compiling module Adder_Substractor
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv 
+# -- Compiling module Execute
 # 
 # Top level modules:
-# 	Adder_Substractor
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# 	Execute
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv}
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:42:50 on Oct 23,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testALU.sv 
-# -- Compiling module testALU
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv 
+# -- Compiling module flipflop
 # 
 # Top level modules:
-# 	testALU
-# End time: 20:42:50 on Oct 23,2022, Elapsed time: 0:00:00
+# 	flipflop
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv 
+# -- Compiling module Fetch
+# 
+# Top level modules:
+# 	Fetch
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/ALUV.sv 
+# -- Compiling module ALUV
+# 
+# Top level modules:
+# 	ALUV
+# End time: 22:19:51 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:51 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv 
+# -- Compiling module Decode
+# 
+# Top level modules:
+# 	Decode
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/condunit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/condunit.sv 
+# -- Compiling module condunit
+# 
+# Top level modules:
+# 	condunit
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/VECTOR_ALU/vectorFPMultiplier.sv 
+# -- Compiling module vectorFPMultiplier
+# 
+# Top level modules:
+# 	vectorFPMultiplier
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/controlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Control/controlUnit.sv 
+# -- Compiling module controlUnit
+# 
+# Top level modules:
+# 	controlUnit
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/instructionMemory.sv 
+# -- Compiling module instructionMemory
+# 
+# Top level modules:
+# 	instructionMemory
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testALU
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" testALU 
-# Start time: 20:42:50 on Oct 23,2022
+# vlog -sv -work work +incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests {C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:52 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests" C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCPU.sv 
+# -- Compiling module testCPU
+# 
+# Top level modules:
+# 	testCPU
+# End time: 22:19:52 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testCPU
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" testCPU 
+# Start time: 22:19:52 on Nov 01,2022
 # Loading sv_std.std
-# Loading work.testALU
-# Loading work.ALU
+# Loading work.testCPU
+# Loading work.CPU
+# Loading work.controlUnit
+# Loading work.condunit
+# Loading work.Fetch
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flipflop
+# Loading work.instructionMemory
+# Loading work.Decode
+# Loading work.scalarRegFile
+# Loading work.vectorRegFile
+# Loading work.Execute
+# Loading work.ALUV
+# Loading work.vectorAdderSubstractor
 # Loading work.Adder_Substractor
 # Loading work.Complement
+# Loading work.vectorFPMultiplier
 # Loading work.multiplicador
+# Loading work.ALU
 # Loading work.divisor
+# Loading work.memory
 # Loading work.FullAdder
-# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv(26): [PCDPC] - Port size (1) does not match connection size (32) for port 'SUBS'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/Sumador File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv
-# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/ALU.sv(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'SUBS'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testALU/ALU/Restador File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/ALU/Adder_Substractor.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Tests/testCPU.sv(18): [PCDPC] - Port size (1) does not match connection size (19) for port 'PC'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(21).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(110): [PCDPC] - Port size (19) does not match connection size (1) for port 'PC'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Fetch File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/Fetch.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(129): [PCDPC] - Port size (64) does not match connection size (152) for port 'writeVectorData'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv(36).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Decode File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(129): [PCDPC] - Port size (64) does not match connection size (152) for port 'reg1VectorContent'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv(39).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Decode File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(129): [PCDPC] - Port size (64) does not match connection size (152) for port 'reg2VectorContent'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv(39).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Decode File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Decode/Decode.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(152): [PCDPC] - Port size (404) does not match connection size (396) for port 'in'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/DecodeFlipFlop File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(152): [PCDPC] - Port size (404) does not match connection size (396) for port 'out'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/DecodeFlipFlop File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Fetch/flipflop.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(173): [PCDPC] - Port size (64) does not match connection size (152) for port 'vectorOperand1'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Execute File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(173): [PCDPC] - Port size (64) does not match connection size (152) for port 'vectorOperand2'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Execute File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(173): [PCDPC] - Port size (64) does not match connection size (152) for port 'out'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Execute File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/CPU.sv(173): [PCDPC] - Port size (64) does not match connection size (152) for port 'dataToWrite'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv(32).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Execute File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv
+# ** Warning: (vsim-3015) C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/Execute.sv(70): [PCDPC] - Port size (64) does not match connection size (152) for port 'd1'. The port definition is at: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Execute/executeOutputMux File: C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Execute/mux2.sv
 # 
 # add wave *
 # view structure
@@ -105,10 +301,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# =============ALU SUM=============
-# ============= TEST 1 SUCCESS A = 000000000000000000000000000000000000000000000001, B = 000000000000000000000000000000000000000000000001 =============
-# ============= TEST 2 SUCCESS A = 000000000000000000000000000000000000000000000111, B = 000000000000000000000000000000000000000000000110 =============
-# ============= TEST 3 SUCCESS A = 000000000000000000000000000000000000000000000011, B = 000000000000000000000000000000000000000000000010 =============
-# ============= TEST 4 SUCCESS A = 000000000000000000000000000000000000000000000100, B = 000000000000000000000000000000000000000000000010 =============
-# End time: 20:44:55 on Oct 23,2022, Elapsed time: 0:02:05
-# Errors: 0, Warnings: 2
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 501 of file "C://Users//abiga//Desktop//ArquiII//ComputerArchitecture2_VectorCPU//Microarchitecture//microarquitectura//Memory//data.txt". (Current address [500], address range [0:499])    : C:/Users/abiga/Desktop/ArquiII/ComputerArchitecture2_VectorCPU/Microarchitecture/microarquitectura/Memory/memory.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /testCPU/CPU/Memory
