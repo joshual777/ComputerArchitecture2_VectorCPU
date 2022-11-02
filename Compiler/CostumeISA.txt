@@ -42,6 +42,7 @@ SUB r1, r1, r5 //Le resta el step al color para el degradado
 MOV r8, 0 //Reinicia a 0 el contador de x
 JMP _Rojo
 
+<<<<<<< HEAD
  _PVERDE:
 
 DIV r5, r2, 105  //RS
@@ -114,3 +115,10 @@ JMP _AZUL
 
 _PRINT:
 
+=======
+//Falta verde
+_PVERDE:
+//Falta azul
+//Falta pintar
+_resta
+>>>>>>> 6047d994cd5c421a7cbd201bda179c4797a7b16b

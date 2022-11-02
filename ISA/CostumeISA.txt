@@ -53,6 +53,6 @@ MOV r8, 0
 JMP _Rojo
 
 //Falta verde
- _PVERDE:
+_PVERDE:
 //Falta azul
 //Falta pintar

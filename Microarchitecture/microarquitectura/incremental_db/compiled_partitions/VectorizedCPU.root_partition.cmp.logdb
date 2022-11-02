@@ -1,7 +1,0 @@
-v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALU:ALU|multiplicador:Multiplicador|lpm_mult:Mult0|mult_9at:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALUV:ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador1|lpm_mult:Mult0|mult_17t:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALUV:ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador2|lpm_mult:Mult0|mult_17t:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALUV:ALUV|vectorFPMultiplier:vectorFPMultiplier|multiplicador:Multiplicador3|lpm_mult:Mult0|mult_17t:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALU:ALU|multiplicador:Multiplicador|lpm_mult:Mult0|mult_9at:auto_generated|mac_out6,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Execute:Execute|ALU:ALU|multiplicador:Multiplicador|lpm_mult:Mult0|mult_9at:auto_generated|mac_out4,
