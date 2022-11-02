@@ -27,11 +27,15 @@ module ALUV #(parameter DATA_WIDTH = 8,
 	//=============Multiplicador FP=============
 
 	logic [LANES-1:0][DATA_WIDTH-1:0] outMultiplicadorFP ;
+	logic [LANES-1:0] CM, VM, NM;
 
 	vectorFPMultiplier #(.WIDTH(DATA_WIDTH), .LANES(LANES)) vectorFPMultiplier( 
 				 .operand1(operand1),
 				 .operand2(operand2),
-				 .out(outMultiplicadorFP)
+				 .out(outMultiplicadorFP),
+				 .C(CM), 
+				 .V(VM), 
+				 .N(NM)
 			);	
 
 			

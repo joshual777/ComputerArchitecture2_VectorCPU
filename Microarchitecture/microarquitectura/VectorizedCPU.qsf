@@ -56,7 +56,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testMemory -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testCPU -section_id eda_simulation
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name EDA_TEST_BENCH_NAME testControlUnit -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testControlUnit
@@ -64,13 +64,34 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testControlUnit -section_
 set_global_assignment -name EDA_TEST_BENCH_NAME testCondUnit -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testCondUnit
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testCondUnit -section_id testCondUnit
+set_global_assignment -name EDA_TEST_BENCH_NAME testCPU -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testCPU
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testCPU -section_id testCPU
+set_global_assignment -name EDA_TEST_BENCH_NAME testALU -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testALU
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testALU -section_id testALU
+set_global_assignment -name EDA_TEST_BENCH_NAME testAluV -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testAluV
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testAluV -section_id testAluV
+set_global_assignment -name EDA_TEST_BENCH_NAME testFecth -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testFecth
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testFecth -section_id testFecth
+set_global_assignment -name EDA_TEST_BENCH_NAME testDecode -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testDecode
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testDecode -section_id testDecode
+set_global_assignment -name EDA_TEST_BENCH_NAME testExecute -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testExecute
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testExecute -section_id testExecute
+set_global_assignment -name EDA_TEST_BENCH_NAME testMemory -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testMemory
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testMemory -section_id testMemory
+set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/Adder_Substractor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testCPU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorAdderSubstractor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Memory/memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/vectorRegFile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/scalarRegFile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/mux2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/xor_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/shiftR_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/shiftL_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/or_modulo.sv
@@ -81,48 +102,29 @@ set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/divisor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/Complement.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/and_modulo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/ALU.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/ALU/Adder_Substractor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/mux3.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/Execute.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Fetch/instructionMemory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Fetch/flipflop.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Fetch/Fetch.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Fetch/adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorAdder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/ALUV.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorDivider.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Decode/Decode.sv
 set_global_assignment -name SYSTEMVERILOG_FILE CPU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Control/condunit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Hazards/hazardsUnit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute/VECTOR_ALU/vectorFPMultiplier.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Control/controlUnit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testControlUnit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testCondUnit.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME testCPU -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testCPU
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testCPU -section_id testCPU
-set_global_assignment -name EDA_TEST_BENCH_NAME testALU -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testALU
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testALU -section_id testALU
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testAluV.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME testAluV -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testAluV
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testAluV -section_id testAluV
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testFecth.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME testFecth -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testFecth
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testFecth -section_id testFecth
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testDecode.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME testDecode -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testDecode
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testDecode -section_id testDecode
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testExecute.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME testExecute -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testExecute
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testExecute -section_id testExecute
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testMemory.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testControlUnit.sv -section_id testControlUnit
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testCondUnit.sv -section_id testCondUnit
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testCPU.sv -section_id testCPU
@@ -131,11 +133,5 @@ set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testAluV.sv -section_id te
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testFecth.sv -section_id testFecth
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testDecode.sv -section_id testDecode
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testExecute.sv -section_id testExecute
-set_global_assignment -name EDA_TEST_BENCH_NAME testMemory -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testMemory
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testMemory -section_id testMemory
 set_global_assignment -name EDA_TEST_BENCH_FILE Tests/testMemory.sv -section_id testMemory
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

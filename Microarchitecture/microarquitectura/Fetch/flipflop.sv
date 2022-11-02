@@ -8,13 +8,13 @@
 	Outputs:
  	- out: current saved value
 **/
-module flipflop #(parameter WIDTH = 18)
+module flipflop #(parameter WIDTH = 19)
 	(input logic clk, reset, enable,
 	input logic [WIDTH-1:0] in,
 	output logic [WIDTH-1:0] out);	
 		
 	always_ff @(posedge clk) begin
-		if (reset) out <= 0;
+		if (reset) out <= 19'b0;
 		else if(enable) out <= in;
 	end
 endmodule

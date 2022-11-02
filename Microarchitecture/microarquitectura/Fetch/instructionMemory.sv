@@ -9,7 +9,7 @@
 	Outputs:
  	- instruction: fetched instruction
 **/
-module instructionMemory #(parameter PC_WIDTH = 18, parameter MEMORY_SIZE = 1024, parameter INSTRUCTION_WIDTH = 32)
+module instructionMemory #(parameter PC_WIDTH = 19, parameter MEMORY_SIZE = 1024, parameter INSTRUCTION_WIDTH = 32)
 								 (input logic [PC_WIDTH-1:0] PC,
 								  output logic [INSTRUCTION_WIDTH-1:0] instruction
 								  );

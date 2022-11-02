@@ -41,7 +41,7 @@ module Execute #(parameter DATA_WIDTH = 19, parameter WIDTH = 8,
 				scalarInmediate, useInmediate, scalarData2Final);
 	
 	
-	mux2 #(WIDTH*VECTOR_SIZE) vectorData2ScalarMux(.d0(vectorOperand2
+	mux2 #(.WIDTH(WIDTH*VECTOR_SIZE)) vectorData2ScalarMux(.d0(vectorOperand2
 ), 
 	.d1({scalarData2Final[7:0],scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0],
 	scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0], scalarData2Final[7:0]}), 
@@ -71,8 +71,7 @@ module Execute #(parameter DATA_WIDTH = 19, parameter WIDTH = 8,
 	.d0(vectorOut), 
 	.d1({{DATA_WIDTH*(VECTOR_SIZE-1){1'b0}}, scalarOut}),  
 	.s(useScalarAlu), .y(out));		
-	assign dataToWrite = {vectorOut[7],vectorOut[6],vectorOut[5], vectorOut[4], vectorOut[3], vectorOut[2],vectorOut[1], vectorOut
-	[0]}; 
+	assign dataToWrite = {out[7],out[6],out[5], out[4], out[3], out[2],out[1], out[0]}; 
 endmodule
 
 

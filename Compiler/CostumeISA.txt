@@ -6,7 +6,7 @@ MOV r4, 50   // T
 
 MOV r10, 1 //Constante 1 para restas y sumas
 //Calcular el step que se va a ir restando hasta llegar a 0
-DIV r5, r1, 481   //RS
+DIV r5, r1, 105   //RS
 //Calcula el porcentaje del degradado
 DIV r4, r4, 100   //%T degradado
 // Calcula el porcentaje de la imagen
@@ -15,21 +15,24 @@ SUB r6, r10, r4    //% imag
 MOV r7, 0 //Contador x
 MOV r8, 0 //Contador y
 //Carga la posicion de memoria donde esta la imagen de entrada, rojo
-MOV r12, 000 //Pos rojo
+MOV r12, 0 //Pos rojo
+MOV r13, 500 //Dir de escritura
 
 _Rojo:
 CMP r5, 0   //Verifica si no hay cambio en el color y si es asi cambia al siguiente
 BE _PVERDE 
-CMP r7, 480 // Verifica si ya termino el rojo
+CMP r7, 1358 // Verifica si ya termino el rojo
 BE _PVERDE
-CMP r8, 80 //Verifica si debe pasar a la siguiente fila
-BE _resta
+CMP r8, 13 //Verifica si debe pasar a la siguiente fila
+BE _restaR
 VLDR v1, r12 //Carga el vector correspondiente
 VSMUL v1, v1, r6 //Multiplica la imagen por su porcentaje
-MULT r11, r4, 000 //Multiplica el degradado por su porcentaje
+MULT r11, r4, r1 //Multiplica el degradado por su porcentaje
 VSADD v1, v1, r11 //Suma ambos
+VSTR v1, r13
 ADD r8, r8, r10 //Aumenta el contador
-ADD r12, r12, r12 //Aumenta la dir de memoria
+ADD r12, r12, r10 //Aumenta la dir de memoria
+ADD r13, r13, r10 //Aumenta la dir de memoria
 JMP _Rojo
 
 
@@ -39,7 +42,75 @@ SUB r1, r1, r5 //Le resta el step al color para el degradado
 MOV r8, 0 //Reinicia a 0 el contador de x
 JMP _Rojo
 
-//Falta verde
  _PVERDE:
-//Falta azul
-//Falta pintar
+
+DIV r5, r2, 105  //RS
+
+//Contadores de ciclos
+MOV r7, 0 //Contador x
+MOV r8, 0 //Contador y
+//Carga la posicion de memoria donde esta la imagen de entrada, rojo
+MOV r12, 0 //Pos rojo
+ADD r13, r10 //Dir de escritura
+
+_VERDE:
+CMP r5, 0   //Verifica si no hay cambio en el color y si es asi cambia al siguiente
+BE _PAZUL
+CMP r7, 400 // Verifica si ya termino el rojo
+BE _PAZUL
+CMP r8, 80 //Verifica si debe pasar a la siguiente fila
+BE _restaV
+VLDR v1, r12 //Carga el vector correspondiente
+VSMUL v1, v1, r6 //Multiplica la imagen por su porcentaje
+MULT r11, r4, r2 //Multiplica el degradado por su porcentaje
+VSADD v1, v1, r11 //Suma ambos
+VSTR v1, r13
+ADD r8, r8, r10 //Aumenta el contador
+ADD r12, r12, r10 //Aumenta la dir de memoria
+ADD r13, r13, r10 //Aumenta la dir de memoria
+JMP _Rojo
+
+
+_restaV:
+ADD r7, r7, r10 //Suma el contador en x
+SUB r2, r2, r5 //Le resta el step al color para el degradado
+MOV r8, 0 //Reinicia a 0 el contador de x
+JMP _VERDE
+
+ _PAZUL:
+
+DIV r5, r3, 105  //RS
+
+//Contadores de ciclos
+MOV r7, 0 //Contador x
+MOV r8, 0 //Contador y
+//Carga la posicion de memoria donde esta la imagen de entrada, rojo
+MOV r12, 0 //Pos rojo
+ADD r13, r10 //Dir de escritura
+
+_AZUL:
+CMP r5, 0   //Verifica si no hay cambio en el color y si es asi cambia al siguiente
+BE _PRINT
+CMP r7, 400 // Verifica si ya termino el rojo
+BE _PRINT
+CMP r8, 80 //Verifica si debe pasar a la siguiente fila
+BE _restaA
+VLDR v1, r12 //Carga el vector correspondiente
+VSMUL v1, v1, r6 //Multiplica la imagen por su porcentaje
+MULT r11, r4, r2 //Multiplica el degradado por su porcentaje
+VSADD v1, v1, r11 //Suma ambos
+VSTR v1, r13
+ADD r8, r8, r10 //Aumenta el contador
+ADD r12, r12, r10 //Aumenta la dir de memoria
+ADD r13, r13, r10 //Aumenta la dir de memoria
+JMP _AZUL
+
+
+_restaA:
+ADD r7, r7, r10 //Suma el contador en x
+SUB r3, r3, r5 //Le resta el step al color para el degradado
+MOV r8, 0 //Reinicia a 0 el contador de x
+JMP _AZUL
+
+_PRINT:
+

@@ -20,7 +20,6 @@ module testALU();
 		);
 		
 	initial begin
-		$display ("=============ALU SUM=============");
 		
 		sel = 4'b100;
 		
@@ -36,8 +35,8 @@ module testALU();
 		#10
 		
 		assert (Out == OutExpected && CExpected == C && ZExpected == Z && VExpected == V && NExpected == N) 
-			$display ($sformatf("============= TEST 1 SUCCESS A = %b, B = %b =============", A, B));
-		else $error($sformatf("=!=!=!=!=!=!== TEST 1 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
+			$display ($sformatf("============= TEST SUM SUCCESS A = %b, B = %b =============", A, B));
+		else $error($sformatf("=!=!=!=!=!=!== TEST SUM FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
 		sel = 4'b101;
 		A = 18'b111;
@@ -51,8 +50,8 @@ module testALU();
 		#10
 		
 		assert (Out == OutExpected && CExpected == C && ZExpected == Z && VExpected == V && NExpected == N) 
-			$display ($sformatf("============= TEST 2 SUCCESS A = %b, B = %b =============", A, B));
-		else $error($sformatf("=!=!=!=!=!=!== TEST 2 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
+			$display ($sformatf("============= TEST SUBS SUCCESS A = %b, B = %b =============", A, B));
+		else $error($sformatf("=!=!=!=!=!=!== TEST SUBS FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
 		sel = 4'b111;
 		A = 19'b0011;
@@ -66,8 +65,8 @@ module testALU();
 		#10
 		
 		assert (Out == OutExpected && CExpected == C && ZExpected == Z && VExpected == V && NExpected == N) 
-			$display ($sformatf("============= TEST 3 SUCCESS A = %b, B = %b =============", A, B));
-		else $error($sformatf("=!=!=!=!=!=!== TEST 3 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
+			$display ($sformatf("============= TEST DIV SUCCESS A = %b, B = %b =============", A, B));
+		else $error($sformatf("=!=!=!=!=!=!== TEST DIV FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
 		sel = 4'b110;
 		A = 19'b100;
@@ -81,8 +80,8 @@ module testALU();
 		#10
 		
 		assert (Out == OutExpected && CExpected == C && ZExpected == Z && VExpected == V && NExpected == N) 
-			$display ($sformatf("============= TEST 4 SUCCESS A = %b, B = %b =============", A, B));
-		else $error($sformatf("=!=!=!=!=!=!== TEST 4 FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
+			$display ($sformatf("============= TEST MULT SUCCESS A = %b, B = %b =============", A, B));
+		else $error($sformatf("=!=!=!=!=!=!== TEST MULT FAIL A = %b, B = %b. Result = %b =!=!=!=!=!=!", A, B, Out));
 		
 	end
 

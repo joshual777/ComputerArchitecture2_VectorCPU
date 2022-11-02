@@ -42,7 +42,7 @@ module Decode #(parameter DATA_WIDTH = 19, //Immediate
 	 );
 			
 	assign reg1Address = instruction[22:19];
-	assign reg2Address = instruction[17:14];
+	assign reg2Address = instruction[18:15];
 	assign regDestinationAddress = instruction[26:23];
 	assign inmediate[18:0] = instruction[18:0];
 	assign opcode = instruction[31:27];
@@ -58,7 +58,7 @@ module Decode #(parameter DATA_WIDTH = 19, //Immediate
    .wd3(writeScalarData),
 	.rd1(reg1ScalarContent), .rd2(reg2ScalarContent));
 
-	vectorRegFile #(.DATA_WIDTH(DATA_WIDTH), 
+	vectorRegFile #(.DATA_WIDTH(WIDTH), 
 						 .REGNUM(VECTOR_REGNUM), 
 						 .ADDRESSWIDTH(ADDRESS_WIDTH),
 						 .VECTOR_SIZE(VECTOR_SIZE))

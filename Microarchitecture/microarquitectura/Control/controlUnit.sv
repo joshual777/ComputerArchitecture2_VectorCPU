@@ -7,7 +7,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
 	   output logic writeEnableVectorWBD, 
 	   output logic writeToMemoryEnableMD,
 	   output logic useInmediateED,
-	   output logic [2:0] aluControlED,
+	   output logic [3:0] aluControlED,
 	   output logic outFlagMD
 		);
 					
@@ -96,7 +96,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b1;
-         aluControlED = 4'b10;
+         aluControlED = 4'b0010;
          outFlagMD = 1'b0;
 
 	  end
@@ -110,7 +110,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b1;
-         aluControlED = 4'b10;
+         aluControlED = 4'b0010;
          outFlagMD = 1'b0;
 			
 	  end
@@ -125,7 +125,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableVectorWBD = 1'b0;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b1;
-         aluControlED = 3'b0101;
+         aluControlED = 4'b0101;
          outFlagMD = 1'b0;
 
 			
@@ -188,7 +188,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeEnableVectorWBD = 1'b1;
          writeToMemoryEnableMD = 1'b0;
          useInmediateED = 1'b0;
-         aluControlED = 3'b010;
+         aluControlED = 4'b010;
          outFlagMD = 1'b0;
 
 			
@@ -204,7 +204,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
          writeToMemoryEnableMD = 1'b1;
          useInmediateED = 1'b0;
          aluControlED = 4'b1111;
-         outFlagMD = 1'b0;
+         outFlagMD = 1'b1;
 
 			
 	  end
@@ -234,7 +234,7 @@ module controlUnit #(parameter OPCODE_WIDTH = 5)
 				writeEnableVectorWBD = 1'b0;
 				writeToMemoryEnableMD = 1'b0;
 				useInmediateED = 1'b0;
-				aluControlED = 3'b0;
+				aluControlED = 4'b0;
 				outFlagMD = 1'b0;
 			end
 		endcase

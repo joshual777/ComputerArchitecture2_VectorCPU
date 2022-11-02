@@ -1,4 +1,4 @@
-module Complement #(parameter WIDTH = 8)  (A,SUBS, S);
+module Complement #(parameter WIDTH = 19)  (A,SUBS, S);
 //El parámetro WIDTH define la cantidad de bits de entrada
 
 input [WIDTH-1:0] A;

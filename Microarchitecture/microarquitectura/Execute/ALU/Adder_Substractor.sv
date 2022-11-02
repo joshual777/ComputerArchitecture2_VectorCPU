@@ -1,4 +1,4 @@
-module Adder_Substractor #(parameter WIDTH = 18)  ( A, B, S,SUBS, Cout,V);
+module Adder_Substractor #(parameter WIDTH = 19)  ( A, B, S,SUBS, Cout,V);
 //El parámetro WIDTH define la cantidad de bits de entrada
 
 input [WIDTH-1:0] A;// Primer numero binario de entrada

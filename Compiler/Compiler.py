@@ -12,15 +12,15 @@ def DicInstr(operand):
                      "SUB": "00101" ,
                      "DIV": "00110" , 
                     "MULT": "00111" ,
-                     "JMP": "01010" ,
+                     "JMP": "01110" ,
                       "BE": "01011" ,
                       "CMP": "01010",
                     "PRINT": "01111"}  
     #Dictionary to store all the vector instructions 
     VectorInstDir = {"VSADD": "10100" ,
-                     "VADD" : "10101" ,
+                     "VADD" : "11100" ,
                      "VSSUB": "11101" ,
-                     "VSMUL": "11100" ,
+                     "VSMUL": "10101" ,
                      "VMOV" : "11001" ,
                      "VMOVI": "10011" ,
                      "VSTR" : "10001" ,

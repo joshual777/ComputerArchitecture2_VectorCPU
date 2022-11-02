@@ -6,7 +6,7 @@
 	Outputs
 	- out = a + b
 */
-module adder #(parameter WIDTH = 18)
+module adder #(parameter WIDTH = 19)
 	(input logic [WIDTH-1:0] a, b,
 	output logic [WIDTH-1:0] out);
 	assign out = a + b;
